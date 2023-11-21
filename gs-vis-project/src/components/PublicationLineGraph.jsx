@@ -21,7 +21,7 @@ export default function PublicationLineGraph({profData}) {
       }, {})
 
       return Object.entries(totalPubsByYear).map(([year, publications]) => ({ year: parseInt(year), publications }))
-              .filter(x => x.year >= 1950) // filter outliers
+              .filter(x => x.year >= 1950 && x.year <= 2023) // filter outliers
   },[])
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export default function PublicationLineGraph({profData}) {
       chartData = totalPubs
     } else {
       chartData = Object.entries(profData["pub_per_year"][0]).map(([year, publications]) => ({ year: parseInt(year), publications }))
-                    .filter(x => x.year >= 1950) // filter outliers
+                    .filter(x => x.year >= 1950 && x.year <= 2023) // filter outliers
     }
 
 
