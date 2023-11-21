@@ -211,9 +211,6 @@ export default function IntraDeptNetworkGraph({selectedProfId, setSelectedProfId
               <p>This faculty member has no co-author stated in Google Scholar.</p>
             }
           </div>
-
-          <Button onClick={() => setSelectedProfId("")}>Deselect</Button>
-
         </Col>
         <Col>
           <div className="intra-dept-network-graph" ref={svgRef} ></div>

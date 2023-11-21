@@ -1,12 +1,13 @@
 import { useCallback, useMemo, useState } from 'react'
 import './App.css'
-import { Container, Row, Col, ListGroup, Tab, Nav, Dropdown, FormControl, Badge, CloseButton } from 'react-bootstrap'
+import { Container, Row, Col, ListGroup, Tab, Nav, Dropdown, FormControl, Badge, CloseButton, Card, Button } from 'react-bootstrap'
 import ust_cse_prof_data from './data/ust_cse_prof.json' 
 import { debounce } from 'lodash'
 import { getRankColor, ranks } from './utils'
 import IntraDeptNetworkGraph from './components/IntraDeptNetworkGraph'
 import CitationLineGraph from './components/CitationLineGraph'
 import PublicationLineGraph from './components/PublicationLineGraph'
+import blankAvatar from "./assets/blankAvatar.png"
 
 const App = () => {
   const [currentTab, setCurrentTab] = useState("perfTab")
@@ -73,8 +74,17 @@ const App = () => {
             </Nav>
             <Tab.Content>
               <Tab.Pane eventKey="perfTab">
-                {citationLineGraph}
-                {pubLineGraph}
+                <Row>
+                  <Col>
+                    Scatterplot
+                  </Col>
+                  <Col>
+                    <div className="d-flex flex-column align-items-end">
+                      {citationLineGraph}
+                      {pubLineGraph}
+                    </div>
+                  </Col>
+                </Row>
               </Tab.Pane>
               <Tab.Pane eventKey="interestTab">
                 Interest Tab
@@ -92,6 +102,29 @@ const App = () => {
         </Col>
         <Col sm={3} style={{maxHeight: "100vh", width: "350px"}}>
           <Container className="d-flex flex-column" style={{ height: '100vh', padding: "20px 10px 20px 10px" }}>
+            { currentProf &&
+              <Card className="mb-3 p-0">
+                <Card.Header>
+                  <div className="d-flex justify-content-between align-items-center">
+                    Selected Faculty Member
+                    <Button variant="outline-secondary" onClick={() => setCurrentProfId("")}>Deselect</Button>
+                  </div>
+                </Card.Header>
+                <Card.Body>
+                  <Row>
+                    <Col xs={2} style={{width: "120px"}}>
+                      <img src={currentProf.url_picture ? currentProf.url_picture : blankAvatar} className="avatar" />
+                    </Col>
+                    <Col>
+                      <span style={{fontWeight: "bold"}}>Name:</span> {currentProf.name} <br/>
+                      <span style={{fontWeight: "bold"}}>Tel:</span> {currentProf.tel} <br/>
+                      <span style={{fontWeight: "bold"}}>Email:</span> {currentProf.email} <br/>
+                      <span style={{fontWeight: "bold"}}>Google Scholar ID:</span> {currentProf.gs_id} <br/>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
+            }
             <div className="mb-3 d-flex" >
               <FormControl type="text" placeholder="Search Name" onChange={debounce(handleSearchProfInput, 200)} />
               <Dropdown style={{marginLeft: "16px"}}>
