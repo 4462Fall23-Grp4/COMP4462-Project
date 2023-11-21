@@ -4,6 +4,7 @@ import { Container, Row, Col, ListGroup, Tab, Nav, Dropdown, FormControl, Badge,
 import ust_cse_prof_data from './data/ust_cse_prof.json' 
 import { debounce } from 'lodash'
 import { getRankColor, ranks } from './utils'
+import ConnectedMap from './component/connectedMap'
 
 const App = () => {
   const [currentTab, setCurrentTab] = useState("perfTab")
@@ -61,7 +62,7 @@ const App = () => {
                 Interest Tab
               </Tab.Pane>
               <Tab.Pane eventKey="coauthorTab">
-                Network Tab
+              <ConnectedMap></ConnectedMap>
               </Tab.Pane>
             </Tab.Content>
           </Tab.Container>
