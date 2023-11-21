@@ -144,13 +144,6 @@ export default function IntraDeptNetworkGraph({selectedProfId, setSelectedProfId
       // linkElements.attr('stroke', (link) => getLinkColor(selectedNode, link))
     }
     
-    function deselectNode(event, selectedNode) {
-      var neighbors = null
-      nodeElements.attr('fill', (node) => getNodeColor(node, neighbors))
-      // textElements.attr('fill', (node) => getTextColor(node, neighbors))
-      // linkElements.attr('stroke', (link) => getLinkColor(selectedNode, link))
-    }
-    
     var linkElements = svg.append("g")
       .attr("class", "links")
       .selectAll("line")
@@ -207,7 +200,7 @@ export default function IntraDeptNetworkGraph({selectedProfId, setSelectedProfId
         <Col>
           <p style={{textAlign: "justify"}}>
             In the academia, it is often that researchers collaborate with one another in publishing a 
-            research paper. The force-directed network graph below shows the coauthorship between HKUST
+            research paper. The force-directed network graph here shows the coauthorship between HKUST
             CSE Department&apos;s regular faculty members. Feel free to click on the node to select the
             member, or drag the nodes to move the nodes. 
           </p>

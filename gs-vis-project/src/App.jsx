@@ -1,10 +1,12 @@
 import { useCallback, useMemo, useState } from 'react'
 import './App.css'
-import { Container, Row, Col, ListGroup, Tab, Nav, Dropdown, FormControl, Badge, Button, CloseButton } from 'react-bootstrap'
+import { Container, Row, Col, ListGroup, Tab, Nav, Dropdown, FormControl, Badge, CloseButton } from 'react-bootstrap'
 import ust_cse_prof_data from './data/ust_cse_prof.json' 
 import { debounce } from 'lodash'
 import { getRankColor, ranks } from './utils'
 import IntraDeptNetworkGraph from './components/IntraDeptNetworkGraph'
+import CitationLineGraph from './components/CitationLineGraph'
+import PublicationLineGraph from './components/PublicationLineGraph'
 
 const App = () => {
   const [currentTab, setCurrentTab] = useState("perfTab")
@@ -13,6 +15,10 @@ const App = () => {
   const [currentFilter, setCurrentFilter] = useState("")
 
   const setCurrentProfIdCallback = useCallback((id) => {setCurrentProfId(id)}, [])
+
+  const currentProf = useMemo(() => 
+    ust_cse_prof_data.find(prof => prof.gs_id == currentProfId)
+  , [currentProfId])
 
   const ustCseProfFiltered = useMemo(() => {
     return ust_cse_prof_data.filter((prof) => {
@@ -66,7 +72,8 @@ const App = () => {
             </Nav>
             <Tab.Content>
               <Tab.Pane eventKey="perfTab">
-                Performance Tab
+                <CitationLineGraph profData={currentProf}/>
+                <PublicationLineGraph profData={currentProf} />
               </Tab.Pane>
               <Tab.Pane eventKey="interestTab">
                 Interest Tab
