@@ -29,9 +29,10 @@ const App = () => {
     })
   }, [searchProf, currentFilter])
 
-  const intraDeptNetworkGraph = useMemo(() => {
-    return <IntraDeptNetworkGraph selectedProfId={currentProfId} setSelectedProfId={setCurrentProfIdCallback} />
-  }
+  const citationLineGraph = useMemo(() => <CitationLineGraph profData={currentProf}/>, [currentProf])
+  const pubLineGraph = useMemo(() => <PublicationLineGraph profData={currentProf} />, [currentProf])
+  const intraDeptNetworkGraph = useMemo(() => 
+    <IntraDeptNetworkGraph selectedProfId={currentProfId} setSelectedProfId={setCurrentProfIdCallback} />
   , [currentProfId])
 
   const handleTabSelect = (selectedTab) => {
@@ -72,8 +73,8 @@ const App = () => {
             </Nav>
             <Tab.Content>
               <Tab.Pane eventKey="perfTab">
-                <CitationLineGraph profData={currentProf}/>
-                <PublicationLineGraph profData={currentProf} />
+                {citationLineGraph}
+                {pubLineGraph}
               </Tab.Pane>
               <Tab.Pane eventKey="interestTab">
                 Interest Tab
