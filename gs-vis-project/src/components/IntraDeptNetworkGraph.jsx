@@ -205,7 +205,7 @@ export default function IntraDeptNetworkGraph({selectedProfId, setSelectedProfId
     <div>
       <Row>
         <Col>
-          <p>
+          <p style={{textAlign: "justify"}}>
             In the academia, it is often that researchers collaborate with one another in publishing a 
             research paper. The force-directed network graph below shows the coauthorship between HKUST
             CSE Department&apos;s regular faculty members. Feel free to click on the node to select the
