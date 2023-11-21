@@ -1,15 +1,18 @@
-import { useMemo, useState } from 'react'
+import { useCallback, useMemo, useState } from 'react'
 import './App.css'
 import { Container, Row, Col, ListGroup, Tab, Nav, Dropdown, FormControl, Badge, Button, CloseButton } from 'react-bootstrap'
 import ust_cse_prof_data from './data/ust_cse_prof.json' 
 import { debounce } from 'lodash'
 import { getRankColor, ranks } from './utils'
+import IntraDeptNetworkGraph from './components/IntraDeptNetworkGraph'
 
 const App = () => {
   const [currentTab, setCurrentTab] = useState("perfTab")
   const [searchProf, setSearchProf] = useState("")
-  const [currentProf, setCurrentProf] = useState("")
+  const [currentProfId, setCurrentProfId] = useState("")
   const [currentFilter, setCurrentFilter] = useState("")
+
+  const setCurrentProfIdCallback = useCallback((id) => {setCurrentProfId(id)}, [])
 
   const ustCseProfFiltered = useMemo(() => {
     return ust_cse_prof_data.filter((prof) => {
@@ -19,6 +22,11 @@ const App = () => {
       return hasSearchWord && isInFilter
     })
   }, [searchProf, currentFilter])
+
+  const intraDeptNetworkGraph = useMemo(() => {
+    return <IntraDeptNetworkGraph selectedProfId={currentProfId} setSelectedProfId={setCurrentProfIdCallback} />
+  }
+  , [currentProfId])
 
   const handleTabSelect = (selectedTab) => {
     setCurrentTab(selectedTab)
@@ -50,7 +58,10 @@ const App = () => {
                 <Nav.Link eventKey="interestTab">Research Interests</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="coauthorTab">Co-authorship Network</Nav.Link>
+                <Nav.Link eventKey="interCoauthorTab">Internal co-authorship Network</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="exterCoauthorTab">External co-authorship Network</Nav.Link>
               </Nav.Item>
             </Nav>
             <Tab.Content>
@@ -60,8 +71,13 @@ const App = () => {
               <Tab.Pane eventKey="interestTab">
                 Interest Tab
               </Tab.Pane>
-              <Tab.Pane eventKey="coauthorTab">
-                Network Tab
+              <Tab.Pane eventKey="interCoauthorTab">
+                <div>
+                  {intraDeptNetworkGraph}
+                </div>
+              </Tab.Pane>
+              <Tab.Pane eventKey="exterCoauthorTab">
+                coauthor
               </Tab.Pane>
             </Tab.Content>
           </Tab.Container>
@@ -96,7 +112,9 @@ const App = () => {
             <div className="flex-grow-1" style={{ overflowY: 'scroll' }}>
               <ListGroup>
                 {ustCseProfFiltered.map((prof, index) => (
-                  <ListGroup.Item key={index} onClick={() => setCurrentProf(prof)} active={currentProf.gs_id == prof.gs_id} action>
+                  <ListGroup.Item key={index} onClick={() => {
+                    setCurrentProfId(prof.gs_id)
+                  }} active={currentProfId == prof.gs_id} action>
                     <svg width="20" height="20">
                       <circle cx="7" cy="10" r="7" fill="white"/>
                       <circle cx="7" cy="10" r="5" fill={getRankColor(prof.rank)}/>
