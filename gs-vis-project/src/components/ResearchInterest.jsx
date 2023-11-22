@@ -586,11 +586,13 @@ export default function ResearchInterest({ selectedProfId, setSelectedProfId }) 
             <Row>
                 <Col>
                     <p style={{ textAlign: "justify" }}>
-                        Understanding your professors&apos; research interests helps you choose relevant courses and seize research opportunities. 
-                        By aligning your interests with specialized professors, you gain valuable knowledge and insights. 
-                        Engaging with professors actively involved in research ensures up-to-date instruction. 
-                        Moreover, awareness of their expertise allows you to pursue research collaborations, 
-                        gaining hands-on experience and deepening your understanding of the field.
+                    Understanding professors&apos; research interests helps you choose relevant courses, 
+                    seize research opportunities, and gain valuable knowledge and insights. 
+                    It enables you to align your interests with specialized professors, 
+                    pursue research collaborations, and deepen your understanding of the field.
+                    </p>
+                    <p> 
+                    Feel free to click on the path or professors&apos; names to view their interests.
                     </p>
 
                     <div className="mt-3" style={{ color: "red" }}>
