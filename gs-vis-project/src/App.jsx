@@ -39,6 +39,15 @@ const App = () => {
     <IntraDeptNetworkGraph selectedProfId={currentProfId} setSelectedProfId={setCurrentProfIdCallback} />
   , [currentProfId])
 
+  const Choropleth = useMemo(() => 
+  <ChoroplethMap selectedProfId={currentProfId} setSelectedProfId={setCurrentProfIdCallback} />
+, [])
+
+const researchInterest = useMemo(() => 
+<ResearchInterest selectedProfId={currentProfId} setSelectedProfId={setCurrentProfIdCallback} />
+, [currentProfId])
+
+
   const handleTabSelect = (selectedTab) => {
     setCurrentTab(selectedTab)
   }
