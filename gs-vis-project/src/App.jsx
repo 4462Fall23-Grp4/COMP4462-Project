@@ -9,6 +9,7 @@ import CitationLineGraph from './components/CitationLineGraph'
 import PublicationLineGraph from './components/PublicationLineGraph'
 import blankAvatar from "./assets/blankAvatar.png"
 import IndexScatterPlot from './components/IndexScatterPlot'
+import ResearchInterest from './components/ResearchInterest'
 
 const App = () => {
   const [currentTab, setCurrentTab] = useState("perfTab")
@@ -36,6 +37,10 @@ const App = () => {
   const intraDeptNetworkGraph = useMemo(() => 
     <IntraDeptNetworkGraph selectedProfId={currentProfId} setSelectedProfId={setCurrentProfIdCallback} />
   , [currentProfId])
+
+  const researchInterest = useMemo(() => 
+  <ResearchInterest selectedProfId={currentProfId} setSelectedProfId={setCurrentProfIdCallback} />
+, [currentProfId])
 
   const handleTabSelect = (selectedTab) => {
     setCurrentTab(selectedTab)
@@ -97,7 +102,7 @@ const App = () => {
                 </Row>
               </Tab.Pane>
               <Tab.Pane eventKey="interestTab">
-                Interest Tab
+                {researchInterest}
               </Tab.Pane>
               <Tab.Pane eventKey="interCoauthorTab">
                 <div>
