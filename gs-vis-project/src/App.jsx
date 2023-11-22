@@ -87,10 +87,9 @@ const researchInterest = useMemo(() =>
             <Tab.Content>
               <Tab.Pane eventKey="perfTab">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in libero erat. Ut congue est erat, et sagittis nibh hendrerit eget. 
-                  Aenean fermentum malesuada convallis. Ut in ullamcorper urna. Integer rhoncus sodales enim, in dignissim nibh ullamcorper eu. Nulla 
-                  vitae elit sit amet nisl euismod posuere nec non ex. Nam ac augue egestas, tempus diam a, gravida velit. Aenean venenatis eleifend nunc 
-                  sit amet vulputate. Phasellus feugiat sed risus non ultrices.
+                The i10-index and h-index are important indicators of the productivity and the citation impact of publication of an author. On the left side, the two indicators are used to plot a scatter plot. You may choose the overall view or the 5-year view.
+                <br></br>
+The number of citations and publications also provide significant insight into analysing research impact and rank of all professors in the CSE department at HKUST.  On the right side, line charts for total citation per year and total publication per year are displayed. You can select a specific author on the author panel to view the charts for his/her respective citation per year and publication per year.
                 </p>
                 <Row>
                   <Col>
