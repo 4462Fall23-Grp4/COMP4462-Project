@@ -2,6 +2,7 @@ import * as d3 from "d3"
 import chordData from '../data/author_interest.json'
 import profID from '../data/ust_prof_id.json'
 import { useEffect, useRef, } from "react"
+import { Col, Row } from "react-bootstrap"
 
 export default function ResearchInterest({ selectedProfId, setSelectedProfId }) {
     const svgRef = useRef(null)
@@ -253,7 +254,7 @@ export default function ResearchInterest({ selectedProfId, setSelectedProfId }) 
         const screenWidth = 800,
             mobileScreen = (screenWidth > 500 ? false : true);
 
-        const margin = { left: 0, top: 10, right: 0, bottom: 10 },
+        const margin = { left: 40, top: 10, right: 0, bottom: 10 },
             width = Math.min(screenWidth, 1000) - margin.left - margin.right,
             height = (mobileScreen ? 300 : Math.min(screenWidth, 800) * 7 / 8) - margin.top - margin.bottom;
 
@@ -272,7 +273,7 @@ export default function ResearchInterest({ selectedProfId, setSelectedProfId }) 
             opacityLow = 0.02; //hover opacity of those chords not hovered over
 
         //How many pixels should the two halves be pulled apart
-        var pullOutSize = (mobileScreen ? 20 : 20)
+        var pullOutSize = (mobileScreen ? 20 : 0)
 
         //////////////////////////////////////////////////////
         //////////////////// Titles on top ///////////////////
@@ -389,8 +390,8 @@ export default function ResearchInterest({ selectedProfId, setSelectedProfId }) 
             .enter().append("g")
             .attr("class", "group")
             .on("click", clickGroup)
-            // .on("mouseover", fade(opacityLow))
-            // .on("mouseout", fade(opacityDefault));
+        // .on("mouseover", fade(opacityLow))
+        // .on("mouseout", fade(opacityDefault));
 
         g.append("path")
             .style("stroke", function (d, i) {
@@ -449,9 +450,9 @@ export default function ResearchInterest({ selectedProfId, setSelectedProfId }) 
             .style("stroke", "none")
             // .style("fill", "url(#animatedGradient)") //An SVG Gradient to give the impression of a flow from left to right
             .style("fill", function (d, i) {
-                if (selectedProfId === ""){
+                if (selectedProfId === "") {
                     return getColor(Names[d.target.index]);
-                }else{
+                } else {
 
                     var chosen = profID.findIndex(findI);
                     return getColor(Names[d.target.index]);
@@ -462,18 +463,19 @@ export default function ResearchInterest({ selectedProfId, setSelectedProfId }) 
                     // }
                 }
             }) //An SVG Gradient to give the impression of a flow from left to right
-            .style("opacity", function (d) { 
-                if (Names[d.source.index] === ""){
+            .style("opacity", function (d) {
+                if (Names[d.source.index] === "") {
                     return 0
-                }else{
-                    if (selectedProfId === ""){
+                } else {
+                    if (selectedProfId === "") {
                         return opacityDefault
-                    }else{
+                    } else {
                         var chosen = profID.findIndex(findI);
-                        if (d.source.index == chosen){
+                        if (d.source.index == chosen) {
                             return opacityDefault
                         }
-                        return opacityLow                    }
+                        return opacityLow
+                    }
                 }
             }) //Make the dummy strokes have a zero opacity (invisible)
             .style("pointer-events", function (d, i) { return (Names[d.source.index] === "" ? "none" : "auto"); }) //Remove pointer events from dummy strokes
@@ -489,7 +491,7 @@ export default function ResearchInterest({ selectedProfId, setSelectedProfId }) 
         ////////////////////////////////////////////////////////////
         ////////////////// Extra Functions /////////////////////////
         ////////////////////////////////////////////////////////////
-        function findI(element){ return element['scholar_id'] == selectedProfId}
+        function findI(element) { return element['scholar_id'] == selectedProfId }
 
         //Include the offset in de start and end angle to rotate the Chord diagram clockwise
         function startAngle(d) { return d.startAngle + offset; }
@@ -569,11 +571,11 @@ export default function ResearchInterest({ selectedProfId, setSelectedProfId }) 
             return "#999"
         }
 
-        function clickPath(d, i){
+        function clickPath(d, i) {
             setSelectedProfId(profID[i.source.index]['scholar_id'])
         }
 
-        function clickGroup(d, i){
+        function clickGroup(d, i) {
             setSelectedProfId(profID[i.index]['scholar_id'])
         }
 
@@ -581,7 +583,24 @@ export default function ResearchInterest({ selectedProfId, setSelectedProfId }) 
 
     return (
         <div>
-            <div className="research-interest" ref={svgRef} ></div>
+            <Row>
+                <Col>
+                    <p style={{ textAlign: "justify" }}>
+                        In the academia, it is often that researchers collaborate with one another in publishing a
+                        research paper. The force-directed network graph here shows the coauthorship between HKUST
+                        CSE Department&apos;s regular faculty members. Feel free to click on the node to select the
+                        member, or drag the nodes to move the nodes.
+                    </p>
+
+                    <div className="mt-3" style={{ color: "red" }}>
+
+                    </div>
+                </Col>
+                <Col style={{padding: "0px"}}>
+                    <div className="research-interest" ref={svgRef} ></div>
+                </Col>
+            </Row>
         </div>
+
     )
 }
