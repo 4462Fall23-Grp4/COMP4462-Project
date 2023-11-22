@@ -1,11 +1,11 @@
 import * as d3 from "d3"
 import chordData from '../data/author_interest.json'
 import profID from '../data/ust_prof_id.json'
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, } from "react"
 
 export default function ResearchInterest({ selectedProfId, setSelectedProfId }) {
     const svgRef = useRef(null)
-
+    console.log(selectedProfId)
     useEffect(() => {
         const customChordLayout = function () {
             var ε = 1e-6, ε2 = ε * ε, π = Math.PI, τ = 2 * π, τε = τ - ε, halfπ = π / 2, d3_radians = π / 180, d3_degrees = 180 / π;
@@ -389,8 +389,9 @@ export default function ResearchInterest({ selectedProfId, setSelectedProfId }) 
             .data(chord.groups)
             .enter().append("g")
             .attr("class", "group")
-            .on("mouseover", fade(opacityLow))
-            .on("mouseout", fade(opacityDefault));
+            .on("click", clickGroup)
+            // .on("mouseover", fade(opacityLow))
+            // .on("mouseout", fade(opacityDefault));
 
         g.append("path")
             .style("stroke", function (d, i) {
@@ -449,18 +450,47 @@ export default function ResearchInterest({ selectedProfId, setSelectedProfId }) 
             .style("stroke", "none")
             // .style("fill", "url(#animatedGradient)") //An SVG Gradient to give the impression of a flow from left to right
             .style("fill", function (d, i) {
-                return getColor(Names[d.target.index]);
+                if (selectedProfId === ""){
+                    return getColor(Names[d.target.index]);
+                }else{
+
+                    var chosen = profID.findIndex(findI);
+                    return getColor(Names[d.target.index]);
+                    // if (d.source.index == chosen){
+                    //     return getColor(Names[d.target.index]);
+                    // }else{
+                    //     return "#E5E5E5"
+                    // }
+                }
             }) //An SVG Gradient to give the impression of a flow from left to right
-            .style("opacity", function (d) { return (Names[d.source.index] === "" ? 0 : opacityDefault); }) //Make the dummy strokes have a zero opacity (invisible)
+            .style("opacity", function (d) { 
+                if (Names[d.source.index] === ""){
+                    return 0
+                }else{
+                    if (selectedProfId === ""){
+                        return opacityDefault
+                    }else{
+                        var chosen = profID.findIndex(findI);
+                        if (d.source.index == chosen){
+                            return opacityDefault
+                        }
+                        return opacityLow                    }
+                }
+            }) //Make the dummy strokes have a zero opacity (invisible)
             .style("pointer-events", function (d, i) { return (Names[d.source.index] === "" ? "none" : "auto"); }) //Remove pointer events from dummy strokes
             .attr("d", path)
-            .on("mouseover", fadeOnChord)
-            .on("mouseout", fade(opacityDefault))
-            .on("click", clickPath);
+            // .on("mouseover", fadeOnChord)
+            // .on("mouseout", fade(opacityDefault))
+            .on("click", clickPath)
+            .transition()
+
+
+
 
         ////////////////////////////////////////////////////////////
         ////////////////// Extra Functions /////////////////////////
         ////////////////////////////////////////////////////////////
+        function findI(element){ return element['scholar_id'] == selectedProfId}
 
         //Include the offset in de start and end angle to rotate the Chord diagram clockwise
         function startAngle(d) { return d.startAngle + offset; }
@@ -541,11 +571,14 @@ export default function ResearchInterest({ selectedProfId, setSelectedProfId }) 
         }
 
         function clickPath(d, i){
-            console.log(profID[i.source.index]['scholar_id'])
             setSelectedProfId(profID[i.source.index]['scholar_id'])
         }
 
-    }, [])
+        function clickGroup(d, i){
+            setSelectedProfId(profID[i.index]['scholar_id'])
+        }
+
+    }, [selectedProfId])
 
     return (
         <div>
