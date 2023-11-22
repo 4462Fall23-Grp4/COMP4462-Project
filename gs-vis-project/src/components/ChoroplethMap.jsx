@@ -18,12 +18,12 @@ export default function ChoroplethMap({ selectedProfId, setSelectedProfId }) {
     const svgRef = useRef(null)
     useEffect(() => {
         const width = 450,
-            height = 350;
+            height = 300;
         const svg = d3.select("#viz_container")
             .append("svg")
-            .attr("width", "100%")
+            .attr("width", "780")
             .attr("height", "100%")
-            .attr("viewBox", "0 0  450 350")
+            .attr("viewBox", "0 0  450 300")
             .attr("preserveAspectRatio", "xMinYMin");
 
         // set map scale, location on screen and its projection
@@ -160,7 +160,7 @@ export default function ChoroplethMap({ selectedProfId, setSelectedProfId }) {
         <div>
             <Row>
                 <Col>
-                    <p style={{ textAlign: "justify" }}>
+                    <p style={{ textAlign: "justify"}}>
                        
                         HKUST CSE researchers often collaborate with other researchers outside of the department and 
                         the instituition. Here is a choropleth map that shows the number of coauthorship with external
@@ -170,10 +170,13 @@ export default function ChoroplethMap({ selectedProfId, setSelectedProfId }) {
 
                     </p>
 
-                    <div className="mt-3" >
+                    
+                </Col>
+                <Col>
+                <div  >
                         <div className="" id="viz_container" ref={svgRef} ></div>
                         {/* <div id="viz_container"></div> */}
-                        <img style={{height: "200px"}} src={legendpng}></img>
+                        <img style={{height: "100px"}} src={legendpng}></img>
                             
                         
                     </div>
