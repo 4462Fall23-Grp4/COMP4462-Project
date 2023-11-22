@@ -9,6 +9,7 @@ import CitationLineGraph from './components/CitationLineGraph'
 import PublicationLineGraph from './components/PublicationLineGraph'
 import blankAvatar from "./assets/blankAvatar.png"
 import IndexScatterPlot from './components/IndexScatterPlot'
+import ChoroplethMap from './components/ChoroplethMap'
 
 const App = () => {
   const [currentTab, setCurrentTab] = useState("perfTab")
@@ -36,6 +37,9 @@ const App = () => {
   const intraDeptNetworkGraph = useMemo(() => 
     <IntraDeptNetworkGraph selectedProfId={currentProfId} setSelectedProfId={setCurrentProfIdCallback} />
   , [currentProfId])
+  const Choropleth = useMemo(() => 
+    <ChoroplethMap selectedProfId={currentProfId} setSelectedProfId={setCurrentProfIdCallback} />
+  , [])
 
   const handleTabSelect = (selectedTab) => {
     setCurrentTab(selectedTab)
@@ -105,7 +109,7 @@ const App = () => {
                 </div>
               </Tab.Pane>
               <Tab.Pane eventKey="exterCoauthorTab">
-                coauthor
+                {Choropleth}
               </Tab.Pane>
             </Tab.Content>
           </Tab.Container>
