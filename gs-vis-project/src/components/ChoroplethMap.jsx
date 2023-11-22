@@ -11,7 +11,7 @@ import { getRankColor } from "../utils"
 import { Col, Row } from "react-bootstrap"
 import * as topojson from "topojson-client";
 import * as legendd3 from "d3-color-legend"
-import legendpng from '../assets/legendChoropleth.png';
+import legendpng from '../assets/legendChoroplethMap.png';
 
 // eslint-disable-next-line react/prop-types
 export default function ChoroplethMap({ selectedProfId, setSelectedProfId }) {
@@ -169,6 +169,7 @@ export default function ChoroplethMap({ selectedProfId, setSelectedProfId }) {
 
 
                     </p>
+                    
 
                     
                 </Col>
