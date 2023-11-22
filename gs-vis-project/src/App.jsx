@@ -8,6 +8,7 @@ import IntraDeptNetworkGraph from './components/IntraDeptNetworkGraph'
 import CitationLineGraph from './components/CitationLineGraph'
 import PublicationLineGraph from './components/PublicationLineGraph'
 import blankAvatar from "./assets/blankAvatar.png"
+import IndexScatterPlot from './components/IndexScatterPlot'
 
 const App = () => {
   const [currentTab, setCurrentTab] = useState("perfTab")
@@ -74,14 +75,23 @@ const App = () => {
             </Nav>
             <Tab.Content>
               <Tab.Pane eventKey="perfTab">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in libero erat. Ut congue est erat, et sagittis nibh hendrerit eget. 
+                  Aenean fermentum malesuada convallis. Ut in ullamcorper urna. Integer rhoncus sodales enim, in dignissim nibh ullamcorper eu. Nulla 
+                  vitae elit sit amet nisl euismod posuere nec non ex. Nam ac augue egestas, tempus diam a, gravida velit. Aenean venenatis eleifend nunc 
+                  sit amet vulputate. Phasellus feugiat sed risus non ultrices.
+                </p>
                 <Row>
                   <Col>
-                    Scatterplot
+                    <IndexScatterPlot />
                   </Col>
                   <Col>
                     <div className="d-flex flex-column align-items-end">
                       {citationLineGraph}
                       {pubLineGraph}
+                      <p>
+                        Note: The values for 2023 are still counting.
+                      </p>
                     </div>
                   </Col>
                 </Row>

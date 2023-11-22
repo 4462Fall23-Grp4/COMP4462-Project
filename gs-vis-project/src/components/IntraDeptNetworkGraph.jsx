@@ -7,13 +7,13 @@ import nodes from '../data/unique_ust_coauthor.json'
 import links from '../data/ust_coauthor_link.json'
 import { useEffect, useRef, useState } from "react"
 import { getRankColor } from "../utils"
-import { Col, Row, Button } from "react-bootstrap"
+import { Col, Row } from "react-bootstrap"
 
 // eslint-disable-next-line react/prop-types
 export default function IntraDeptNetworkGraph({selectedProfId, setSelectedProfId}) {
   const svgRef = useRef(null)
 
-  const [isCoauthor, setIsCoauthor] = useState(null)
+  const [isCoauthor, setIsCoauthor] = useState(true)
 
   useEffect(() => {
     const container = d3.select(svgRef.current)
