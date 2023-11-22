@@ -553,13 +553,13 @@ export default function ResearchInterest({ selectedProfId, setSelectedProfId }) 
                     return "#5778a4";
                 case 'Cybersecurity':
                     return "#e7ca60";
-                case 'Data, Knowledge and Information Management':
+                case 'Data, Knowledge & Info Mgmt':
                     return "#85b6b2";
                 case 'Human-Computer Interaction':
                     return "#f1a2a9";
                 case 'Networking and Computer Systems':
                     return "#6a9f58";
-                case 'Software Engineering and Programming Languages':
+                case 'Software Engg and Prog Lang':
                     return "#e49444";
                 case 'Theoretical Computer Science':
                     return "#a87c9f";
@@ -586,17 +586,18 @@ export default function ResearchInterest({ selectedProfId, setSelectedProfId }) 
             <Row>
                 <Col>
                     <p style={{ textAlign: "justify" }}>
-                        In the academia, it is often that researchers collaborate with one another in publishing a
-                        research paper. The force-directed network graph here shows the coauthorship between HKUST
-                        CSE Department&apos;s regular faculty members. Feel free to click on the node to select the
-                        member, or drag the nodes to move the nodes.
+                        Understanding your professors&apos; research interests helps you choose relevant courses and seize research opportunities. 
+                        By aligning your interests with specialized professors, you gain valuable knowledge and insights. 
+                        Engaging with professors actively involved in research ensures up-to-date instruction. 
+                        Moreover, awareness of their expertise allows you to pursue research collaborations, 
+                        gaining hands-on experience and deepening your understanding of the field.
                     </p>
 
                     <div className="mt-3" style={{ color: "red" }}>
 
                     </div>
                 </Col>
-                <Col style={{padding: "0px"}}>
+                <Col style={{ padding: "0px" }}>
                     <div className="research-interest" ref={svgRef} ></div>
                 </Col>
             </Row>
