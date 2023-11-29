@@ -4,7 +4,7 @@ import ust_cse_prof_data from "../data/ust_cse_prof.json";
 import { parseRank } from "../utils";
 import { ButtonGroup, ToggleButton } from "react-bootstrap";
 
-export default function IndexScatterPlot() {
+export default function IndexScatterPlot({ selectedProfId, setSelectedProfId }) {
   const containerRef = useRef();
 
   const [currentMode, setCurrentMode] = useState("1");
@@ -28,6 +28,20 @@ export default function IndexScatterPlot() {
       };
     });
   }, [currentMode]);
+
+  const getMarkColor = (rank) => {
+    switch (rank) {
+      case "Chair Professor":
+        return "#0057e7"
+      case "Professor":
+        return "#d62d20"
+      case "Associate Professor":
+        return "#ffa700"
+      case "Assistant Professor":
+        return "#008744"
+    }
+    return "black"
+  }
 
   useEffect(() => {
     const plot = Plot.plot({
@@ -56,8 +70,31 @@ export default function IndexScatterPlot() {
         Plot.dot(data, {
           x: "hindex",
           y: "i10index",
-          stroke: "rank",
+          // stroke: "rank",
+          stroke: (d) => {
+            if (!selectedProfId) {
+              return getMarkColor(d.rank)
+            } else {
+              if (d.gs_id === selectedProfId)
+                return getMarkColor(d.rank)
+              else
+                return "grey"
+            }
+          },
+          fill: (d) =>{
+            if (!selectedProfId) {
+              return "none"
+            } else {
+              if (d.gs_id === selectedProfId)
+                return getMarkColor(d.rank)
+              else
+                return "none"
+            }
+          },
           symbol: "head",
+          // filter: (d) =>{
+          //   console.log(d)
+          // }
         }),
         Plot.tip(
           data,
@@ -74,7 +111,7 @@ export default function IndexScatterPlot() {
 
     containerRef.current.append(plot);
     return () => plot.remove();
-  }, [data]);
+  }, [data, selectedProfId]);
 
   return (
     <div>

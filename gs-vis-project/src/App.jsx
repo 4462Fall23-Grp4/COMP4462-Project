@@ -47,6 +47,10 @@ const researchInterest = useMemo(() =>
 <ResearchInterest selectedProfId={currentProfId} setSelectedProfId={setCurrentProfIdCallback} />
 , [currentProfId])
 
+const indexScatterPlot = useMemo(() => 
+<IndexScatterPlot selectedProfId={currentProfId} setSelectedProfId={setCurrentProfIdCallback} />
+, [currentProfId])
+
 
   const handleTabSelect = (selectedTab) => {
     setCurrentTab(selectedTab)
@@ -93,7 +97,7 @@ The number of citations and publications also provide significant insight into a
                 </p>
                 <Row>
                   <Col>
-                    <IndexScatterPlot />
+                    {indexScatterPlot}
                   </Col>
                   <Col>
                     <div className="d-flex flex-column align-items-end">
