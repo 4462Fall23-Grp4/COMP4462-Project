@@ -7,6 +7,7 @@ import * as d3 from 'd3'
 import nodes from '../data/unique_ust_coauthor.json'
 import links from '../data/ust_coauthor_link.json'
 import { useEffect, useRef, useState } from "react"
+import profIDName from "../data/ust_prof_id.json"
 import { getRankColor } from "../utils"
 import { Col, Row } from "react-bootstrap"
 import * as topojson from "topojson-client";
@@ -28,11 +29,11 @@ export default function ChoroplethMap({ selectedProfId, setSelectedProfId }) {
 
         // set map scale, location on screen and its projection
         const projection = d3.geoMercator()
-        .scale(width / 2.5 / Math.PI)
-        .rotate([0, 0])
-        .center([ 0, 0]) 
-        // .center([114.109497, 22.396427])
-        .translate([width/2, height/2*1.3]);
+            .scale(width / 2.5 / Math.PI)
+            .rotate([0, 0])
+            .center([0, 0])
+            // .center([114.109497, 22.396427])
+            .translate([width / 2, height / 2 * 1.3]);
 
 
         // path generator
@@ -154,35 +155,123 @@ export default function ChoroplethMap({ selectedProfId, setSelectedProfId }) {
         //     .call(legend);
 
         // set note
-        
+
     }, [])
+
+    const getProfessorName = (selectedProfId) => {
+        for (let i = 0; i < profIDName.length; i++) {
+            if (profIDName[i]["scholar_id"] == selectedProfId) {
+                return profIDName[i]["name"]
+            }
+        }
+
+        return ""
+    }
+
+    const getCoauthorList = (selectedProfId) => {
+        const data =
+        {
+            Azu2w_MAAAAJ: [
+                {
+                    country: "China",
+                    number: 10
+                },
+                {
+                    country: "USA",
+                    number: 10
+                },
+                {
+                    country: "UK",
+                    number: 10
+                }
+            ],
+            aQblKVwAAAAJ: [
+                {
+                    country: "AA",
+                    number: 11
+                },
+                {
+                    country: "BB",
+                    number: 22
+                },
+                {
+                    country: "CC",
+                    number: 33
+                }
+            ]
+        }
+        if (data[selectedProfId]) {
+            return data[selectedProfId]
+        }
+        return []
+    }
+
+    const getAnnotationContent = () => {
+        const profName = getProfessorName(selectedProfId)
+        const coauthorNetwork = getCoauthorList(selectedProfId)
+
+        return (<Row>
+            <div style={{ textAlign: "justify" }}>
+                <p style={{ fontWeight: "bold", fontSize: "18px" }}>
+                    {profName}
+                </p>
+
+                {coauthorNetwork.length > 0 ?
+                    <div style={{ fontWeight: "bold", fontSize: "14px" }}>
+                        <div style={{ float: 'left', minWidth: "150px" }}>
+                            Country/Region
+                        </div>
+                        <div>
+                            Number
+                        </div>
+                    </div> :
+                    <div>
+                        N.A.
+                    </div>
+                }
+                {coauthorNetwork.map((data) => {
+                    return (
+                        <div key={data.country}>
+                            <div style={{ float: 'left', minWidth: "150px" }}>
+                                {data.country}
+                            </div>
+                            <div>
+                                {data.number}
+                            </div>
+                        </div>
+                    )
+                })}
+
+            </div>
+        </Row>)
+    }
+
+    console.log(selectedProfId)
     return (
         <div>
             <Row>
                 <Col>
-                    <p style={{ textAlign: "justify"}}>
-                       
-                        HKUST CSE researchers often collaborate with other researchers outside of the department and 
-                        the instituition. Here is a choropleth map that shows the number of coauthorship with external
-                         instuition in different countries and regions. Feel free to zoom in, and hover on the regions 
-                        to view the respective collaboration.
-
-
-                    </p>
-                    
-
-                    
+                    <Row>
+                        <p style={{ textAlign: "justify" }}>
+                            HKUST CSE researchers often collaborate with other researchers outside of the department and
+                            the instituition. Here is a choropleth map that shows the number of coauthorship with external
+                            instuition in different countries and regions. Feel free to zoom in, and hover on the regions
+                            to view the respective collaboration.
+                        </p>
+                    </Row>
+                    {selectedProfId ?
+                        getAnnotationContent()
+                        : <></>
+                    }
                 </Col>
                 <Col>
-                <div  >
+                    <div  >
                         <div className="" id="viz_container" ref={svgRef} ></div>
                         {/* <div id="viz_container"></div> */}
-                        <img style={{height: "100px"}} src={legendpng}></img>
-                            
-                        
+                        <img style={{ height: "100px" }} src={legendpng}></img>
                     </div>
                 </Col>
-                
+
             </Row>
         </div>
     )
