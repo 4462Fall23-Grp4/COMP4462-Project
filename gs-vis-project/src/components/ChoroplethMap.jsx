@@ -274,7 +274,7 @@ export default function ChoroplethMap({ selectedProfId, setSelectedProfId }) {
             if (mapData.data[i].id===selectedProfId){
                 console.log("matched")
                 
-                return mapData.data[i].coauthor
+                return mapData.data[i].coauthorLong
             }
             
         }
