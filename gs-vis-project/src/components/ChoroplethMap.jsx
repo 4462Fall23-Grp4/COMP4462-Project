@@ -213,7 +213,7 @@ export default function ChoroplethMap({ selectedProfId, setSelectedProfId }) {
         return (<Row>
             <div style={{ textAlign: "justify" }}>
                 <p style={{ fontWeight: "bold", fontSize: "18px" }}>
-                    {profName}
+                    Prof. {profName}
                 </p>
 
                 {coauthorNetwork.length > 0 ?
@@ -226,7 +226,7 @@ export default function ChoroplethMap({ selectedProfId, setSelectedProfId }) {
                         </div>
                     </div> :
                     <div>
-                        N.A.
+                        No data from Goolge Scholar
                     </div>
                 }
                 {coauthorNetwork.map((data) => {
