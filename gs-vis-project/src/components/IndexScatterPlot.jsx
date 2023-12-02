@@ -29,24 +29,14 @@ export default function IndexScatterPlot({ selectedProfId, setSelectedProfId }) 
     });
   }, [currentMode]);
 
-  const getMarkColor = (rank) => {
-    switch (rank) {
-      case "Chair Professor":
-        return "#0057e7"
-      case "Professor":
-        return "#d62d20"
-      case "Associate Professor":
-        return "#ffa700"
-      case "Assistant Professor":
-        return "#008744"
-    }
-    return "black"
-  }
+  const selectedProf = useMemo(() => {
+    return data.filter(x => x.gs_id == selectedProfId)
+  }, [selectedProfId, data])
 
   useEffect(() => {
     const plot = Plot.plot({
-      height: 500,
-      width: 700,
+      // height: 400,
+      // width: 700,
       color: {
         type: "categorical",
         domain: [
@@ -70,31 +60,8 @@ export default function IndexScatterPlot({ selectedProfId, setSelectedProfId }) 
         Plot.dot(data, {
           x: "hindex",
           y: "i10index",
-          // stroke: "rank",
-          stroke: (d) => {
-            if (!selectedProfId) {
-              return getMarkColor(d.rank)
-            } else {
-              if (d.gs_id === selectedProfId)
-                return getMarkColor(d.rank)
-              else
-                return "grey"
-            }
-          },
-          fill: (d) =>{
-            if (!selectedProfId) {
-              return "none"
-            } else {
-              if (d.gs_id === selectedProfId)
-                return getMarkColor(d.rank)
-              else
-                return "none"
-            }
-          },
-          symbol: "head",
-          // filter: (d) =>{
-          //   console.log(d)
-          // }
+          stroke: "rank",
+          symbol: "head"
         }),
         Plot.tip(
           data,
@@ -104,12 +71,33 @@ export default function IndexScatterPlot({ selectedProfId, setSelectedProfId }) 
             title: (d) =>
               `${d.name} \n\n i-index: ${d.i10index} \n h-index: ${d.hindex}`,
             fontSize: 14,
+            filter: (d) => d.gs_id != selectedProfId
           })
         ),
+        Plot.tip(
+          selectedProf,
+          {
+            x: "hindex",
+            y: "i10index",
+            title: (d) =>
+              `${d.name} \n\n i-index: ${d.i10index} \n h-index: ${d.hindex}`,
+            fontSize: 14,
+            fontWeight: 'bold',
+            stroke: "blue",
+            strokeWidth: 2
+          }
+        )
       ],
     });
 
+    plot.addEventListener("click", (event) => {
+      if (plot.value) {
+        setSelectedProfId(plot.value.gs_id)
+      }
+    });
+
     containerRef.current.append(plot);
+    
     return () => plot.remove();
   }, [data, selectedProfId]);
 
