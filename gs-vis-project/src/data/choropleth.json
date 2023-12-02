@@ -8,18 +8,16 @@
         {
             "id": "aQblKVwAAAAJ",
             "coauthor": {
-                "HKG": 2,
                 "GBR": 1,
                 "SGP": 1,
-                "CHN": 2,
+                "CHN": 4,
                 "USA": 1,
                 "FRA": 1
             },
             "coauthorLong": {
-                "Hong Kong": 2,
                 "UK": 1,
                 "Singapore": 1,
-                "China": 2,
+                "China": 4,
                 "USA": 1,
                 "France": 1
             }
@@ -28,55 +26,47 @@
             "id": "uiCSOycAAAAJ",
             "coauthor": {
                 "USA": 19,
-                "HKG": 22,
-                "CHN": 8,
+                "CHN": 32,
                 "CAN": 2,
                 "DEU": 1,
                 "TUR": 1,
                 "SGP": 2,
-                "CHE": 2,
-                "TWN": 2
+                "CHE": 2
             },
             "coauthorLong": {
                 "USA": 19,
-                "Hong Kong": 22,
-                "China": 8,
+                "China": 32,
                 "Canada": 2,
                 "Germany": 1,
                 "Turkey": 1,
                 "Singapore": 2,
-                "Switzerland": 2,
-                "Taiwan": 2
+                "Switzerland": 2
             }
         },
         {
             "id": "Z_t5DjwAAAAJ",
             "coauthor": {
-                "HKG": 3,
                 "GBR": 1,
-                "CHN": 1
+                "CHN": 4
             },
             "coauthorLong": {
-                "Hong Kong": 3,
                 "UK": 1,
-                "China": 1
+                "China": 4
             }
         },
         {
             "id": "tnRV5QYAAAAJ",
             "coauthor": {
-                "HKG": 2,
                 "USA": 11,
                 "KOR": 1,
-                "CHN": 6,
+                "CHN": 8,
                 "CAN": 1,
                 "AUS": 1
             },
             "coauthorLong": {
-                "Hong Kong": 2,
                 "USA": 11,
                 "South Korea": 1,
-                "China": 6,
+                "China": 8,
                 "Canada": 1,
                 "Australia": 1
             }
@@ -85,9 +75,8 @@
             "id": "gtglwgYAAAAJ",
             "coauthor": {
                 "USA": 9,
-                "CHN": 14,
+                "CHN": 24,
                 "CAN": 2,
-                "HKG": 10,
                 "AUS": 4,
                 "JPN": 1,
                 "FIN": 1,
@@ -95,9 +84,8 @@
             },
             "coauthorLong": {
                 "USA": 9,
-                "China": 14,
+                "China": 24,
                 "Canada": 2,
-                "Hong Kong": 10,
                 "Australia": 4,
                 "Japan": 1,
                 "Finland": 1,
@@ -107,36 +95,32 @@
         {
             "id": "-gtmMpIAAAAJ",
             "coauthor": {
-                "CHN": 25,
+                "CHN": 29,
                 "SGP": 5,
-                "USA": 15,
-                "HKG": 4
+                "USA": 15
             },
             "coauthorLong": {
-                "China": 25,
+                "China": 29,
                 "Singapore": 5,
-                "USA": 15,
-                "Hong Kong": 4
+                "USA": 15
             }
         },
         {
             "id": "lLMX9hcAAAAJ",
             "coauthor": {
                 "USA": 9,
-                "HKG": 26,
                 "AUS": 1,
                 "CAN": 1,
-                "CHN": 3,
+                "CHN": 29,
                 "KOR": 1,
                 "FRA": 2,
                 "GBR": 1
             },
             "coauthorLong": {
                 "USA": 9,
-                "Hong Kong": 26,
                 "Australia": 1,
                 "Canada": 1,
-                "China": 3,
+                "China": 29,
                 "South Korea": 1,
                 "France": 2,
                 "UK": 1
@@ -156,33 +140,30 @@
             "coauthor": {
                 "USA": 7,
                 "KOR": 3,
-                "CHN": 1,
+                "CHN": 2,
                 "CAN": 1,
                 "NLD": 1,
                 "DEU": 1,
                 "BEL": 1,
                 "ISR": 1,
-                "SGP": 1,
-                "HKG": 1
+                "SGP": 1
             },
             "coauthorLong": {
                 "USA": 7,
                 "South Korea": 3,
-                "China": 1,
+                "China": 2,
                 "Canada": 1,
                 "Netherlands": 1,
                 "Germany": 1,
                 "Belgium": 1,
                 "Israel": 1,
-                "Singapore": 1,
-                "Hong Kong": 1
+                "Singapore": 1
             }
         },
         {
             "id": "5RIgb3wAAAAJ",
             "coauthor": {
-                "CHN": 16,
-                "HKG": 11,
+                "CHN": 27,
                 "GBR": 5,
                 "ARE": 1,
                 "CAN": 1,
@@ -193,8 +174,7 @@
                 "KOR": 1
             },
             "coauthorLong": {
-                "China": 16,
-                "Hong Kong": 11,
+                "China": 27,
                 "UK": 5,
                 "United Arab Emirates": 1,
                 "Canada": 1,
@@ -208,21 +188,18 @@
         {
             "id": "MVf7Lq0AAAAJ",
             "coauthor": {
-                "CHN": 1,
-                "HKG": 1
+                "CHN": 2
             },
             "coauthorLong": {
-                "China": 1,
-                "Hong Kong": 1
+                "China": 2
             }
         },
         {
             "id": "H9zO5eYAAAAJ",
             "coauthor": {
                 "NOR": 3,
-                "CHN": 4,
+                "CHN": 5,
                 "FRA": 1,
-                "HKG": 1,
                 "USA": 6,
                 "SGP": 2,
                 "JPN": 1,
@@ -233,9 +210,8 @@
             },
             "coauthorLong": {
                 "Norway": 3,
-                "China": 4,
+                "China": 5,
                 "France": 1,
-                "Hong Kong": 1,
                 "USA": 6,
                 "Singapore": 2,
                 "Japan": 1,
@@ -249,24 +225,22 @@
             "id": "4o8gvAYAAAAJ",
             "coauthor": {
                 "AUT": 4,
-                "CHN": 3,
+                "CHN": 9,
                 "DNK": 1,
                 "GBR": 1,
                 "IRN": 3,
                 "AUS": 1,
                 "DEU": 2,
-                "HKG": 6,
                 "USA": 3
             },
             "coauthorLong": {
                 "Austria": 4,
-                "China": 3,
+                "China": 9,
                 "Denmark": 1,
                 "UK": 1,
                 "Iran": 3,
                 "Australia": 1,
                 "Germany": 2,
-                "Hong Kong": 6,
                 "USA": 3
             }
         },
@@ -279,11 +253,10 @@
                 "DEU": 2,
                 "CAN": 2,
                 "GBR": 1,
-                "HKG": 2,
                 "POL": 1,
                 "BEL": 2,
                 "ISR": 3,
-                "CHN": 3,
+                "CHN": 5,
                 "KOR": 2,
                 "AUS": 1,
                 "CHE": 1
@@ -295,11 +268,10 @@
                 "Germany": 2,
                 "Canada": 2,
                 "UK": 1,
-                "Hong Kong": 2,
                 "Poland": 1,
                 "Belgium": 2,
                 "Israel": 3,
-                "China": 3,
+                "China": 5,
                 "South Korea": 2,
                 "Australia": 1,
                 "Switzerland": 1
@@ -308,17 +280,15 @@
         {
             "id": "Ib-sizwAAAAJ",
             "coauthor": {
-                "CHN": 4,
+                "CHN": 5,
                 "JPN": 1,
                 "AUS": 3,
-                "HKG": 1,
                 "CAN": 1
             },
             "coauthorLong": {
-                "China": 4,
+                "China": 5,
                 "Japan": 1,
                 "Australia": 3,
-                "Hong Kong": 1,
                 "Canada": 1
             }
         },
@@ -351,22 +321,20 @@
             "id": "JE_m2UgAAAAJ",
             "coauthor": {
                 "USA": 14,
-                "CHN": 5,
+                "CHN": 8,
                 "KOR": 6,
                 "CAN": 2,
                 "GBR": 1,
-                "HKG": 3,
                 "SGP": 1,
                 "AUT": 1,
                 "CHE": 1
             },
             "coauthorLong": {
                 "USA": 14,
-                "China": 5,
+                "China": 8,
                 "South Korea": 6,
                 "Canada": 2,
                 "UK": 1,
-                "Hong Kong": 3,
                 "Singapore": 1,
                 "Austria": 1,
                 "Switzerland": 1
@@ -381,32 +349,26 @@
             "id": "SLgWQLEAAAAJ",
             "coauthor": {
                 "CAN": 3,
-                "CHN": 9,
-                "HKG": 9,
+                "CHN": 19,
                 "USA": 6,
-                "ITA": 1,
-                "TWN": 1
+                "ITA": 1
             },
             "coauthorLong": {
                 "Canada": 3,
-                "China": 9,
-                "Hong Kong": 9,
+                "China": 19,
                 "USA": 6,
-                "Italy": 1,
-                "Taiwan": 1
+                "Italy": 1
             }
         },
         {
             "id": "kjiwE6IAAAAJ",
             "coauthor": {
-                "CHN": 6,
-                "HKG": 2,
+                "CHN": 8,
                 "USA": 7,
                 "SGP": 1
             },
             "coauthorLong": {
-                "China": 6,
-                "Hong Kong": 2,
+                "China": 8,
                 "USA": 7,
                 "Singapore": 1
             }
@@ -420,8 +382,7 @@
             "id": "SqAsppUAAAAJ",
             "coauthor": {
                 "SGP": 1,
-                "HKG": 6,
-                "CHN": 12,
+                "CHN": 18,
                 "USA": 18,
                 "KOR": 1,
                 "CYP": 1,
@@ -429,8 +390,7 @@
             },
             "coauthorLong": {
                 "Singapore": 1,
-                "Hong Kong": 6,
-                "China": 12,
+                "China": 18,
                 "USA": 18,
                 "South Korea": 1,
                 "Cyprus": 1,
@@ -455,27 +415,25 @@
         {
             "id": "7BPMWSkAAAAJ",
             "coauthor": {
-                "HKG": 5,
                 "GRC": 4,
                 "SGP": 5,
                 "DEU": 2,
                 "USA": 13,
                 "CAN": 2,
                 "ITA": 1,
-                "CHN": 1,
+                "CHN": 6,
                 "GBR": 1,
                 "DNK": 1,
                 "AUT": 1
             },
             "coauthorLong": {
-                "Hong Kong": 5,
                 "Greece": 4,
                 "Singapore": 5,
                 "Germany": 2,
                 "USA": 13,
                 "Canada": 2,
                 "Italy": 1,
-                "China": 1,
+                "China": 6,
                 "UK": 1,
                 "Denmark": 1,
                 "Austria": 1
@@ -485,10 +443,9 @@
             "id": "9Q8DH5sAAAAJ",
             "coauthor": {
                 "USA": 23,
-                "HKG": 8,
                 "GRC": 5,
                 "IRN": 1,
-                "CHN": 2,
+                "CHN": 10,
                 "EGY": 1,
                 "IRL": 1,
                 "GBR": 1,
@@ -500,10 +457,9 @@
             },
             "coauthorLong": {
                 "USA": 23,
-                "Hong Kong": 8,
                 "Greece": 5,
                 "Iran": 1,
-                "China": 2,
+                "China": 10,
                 "Egypt": 1,
                 "Ireland": 1,
                 "UK": 1,
@@ -522,15 +478,13 @@
         {
             "id": "J7a5zGEAAAAJ",
             "coauthor": {
-                "CHN": 7,
+                "CHN": 10,
                 "SGP": 1,
-                "HKG": 3,
                 "USA": 5
             },
             "coauthorLong": {
-                "China": 7,
+                "China": 10,
                 "Singapore": 1,
-                "Hong Kong": 3,
                 "USA": 5
             }
         },
@@ -569,10 +523,8 @@
         {
             "id": "MdQZ-q8AAAAJ",
             "coauthor": {
-                "HKG": 38,
-                "CHN": 28,
+                "CHN": 67,
                 "USA": 49,
-                "TWN": 1,
                 "GBR": 1,
                 "SGP": 4,
                 "CHE": 1,
@@ -581,10 +533,8 @@
                 "CAN": 1
             },
             "coauthorLong": {
-                "Hong Kong": 38,
-                "China": 28,
+                "China": 67,
                 "USA": 49,
-                "Taiwan": 1,
                 "UK": 1,
                 "Singapore": 4,
                 "Switzerland": 1,
@@ -596,18 +546,14 @@
         {
             "id": "DORzgBQAAAAJ",
             "coauthor": {
-                "HKG": 2,
                 "ISR": 1,
-                "CHN": 4,
-                "TWN": 3,
+                "CHN": 9,
                 "CHE": 1,
                 "USA": 1
             },
             "coauthorLong": {
-                "Hong Kong": 2,
                 "Israel": 1,
-                "China": 4,
-                "Taiwan": 3,
+                "China": 9,
                 "Switzerland": 1,
                 "USA": 1
             }
@@ -621,28 +567,24 @@
             "id": "POlWWAsAAAAJ",
             "coauthor": {
                 "USA": 10,
-                "HKG": 1,
-                "CHN": 1
+                "CHN": 2
             },
             "coauthorLong": {
                 "USA": 10,
-                "Hong Kong": 1,
-                "China": 1
+                "China": 2
             }
         },
         {
             "id": "FeJrzPMAAAAJ",
             "coauthor": {
                 "CAN": 4,
-                "HKG": 5,
                 "USA": 1,
-                "CHN": 2
+                "CHN": 7
             },
             "coauthorLong": {
                 "Canada": 4,
-                "Hong Kong": 5,
                 "USA": 1,
-                "China": 2
+                "China": 7
             }
         },
         {
@@ -662,29 +604,27 @@
                 "FRA": 1,
                 "GBR": 4,
                 "USA": 1,
-                "HKG": 1,
-                "CHE": 1
+                "CHE": 1,
+                "CHN": 1
             },
             "coauthorLong": {
                 "Italy": 2,
                 "France": 1,
                 "UK": 4,
                 "USA": 1,
-                "Hong Kong": 1,
-                "Switzerland": 1
+                "Switzerland": 1,
+                "China": 1
             }
         },
         {
             "id": "nEsOOx8AAAAJ",
             "coauthor": {
-                "CHN": 5,
-                "USA": 5,
-                "HKG": 6
+                "CHN": 11,
+                "USA": 5
             },
             "coauthorLong": {
-                "China": 5,
-                "USA": 5,
-                "Hong Kong": 6
+                "China": 11,
+                "USA": 5
             }
         },
         {
@@ -693,8 +633,7 @@
                 "GBR": 2,
                 "USA": 28,
                 "DNK": 2,
-                "CHN": 9,
-                "HKG": 4,
+                "CHN": 13,
                 "CAN": 1,
                 "SGP": 2,
                 "NLD": 1,
@@ -705,8 +644,7 @@
                 "UK": 2,
                 "USA": 28,
                 "Denmark": 2,
-                "China": 9,
-                "Hong Kong": 4,
+                "China": 13,
                 "Canada": 1,
                 "Singapore": 2,
                 "Netherlands": 1,
@@ -736,30 +674,26 @@
         {
             "id": "XTlaQMkAAAAJ",
             "coauthor": {
-                "CHN": 60,
-                "HKG": 18,
+                "CHN": 79,
                 "USA": 31,
                 "CAN": 7,
                 "NOR": 1,
                 "SGP": 1,
                 "AUS": 2,
                 "GBR": 2,
-                "TWN": 1,
                 "NLD": 1,
                 "GRC": 1,
                 "ITA": 3,
                 "BRA": 1
             },
             "coauthorLong": {
-                "China": 60,
-                "Hong Kong": 18,
+                "China": 79,
                 "USA": 31,
                 "Canada": 7,
                 "Norway": 1,
                 "Singapore": 1,
                 "Australia": 2,
                 "UK": 2,
-                "Taiwan": 1,
                 "Netherlands": 1,
                 "Greece": 1,
                 "Italy": 3,
@@ -769,25 +703,23 @@
         {
             "id": "y6m820wAAAAJ",
             "coauthor": {
-                "CHN": 10,
+                "CHN": 13,
                 "AUS": 13,
                 "DNK": 1,
                 "POL": 1,
                 "NZL": 1,
                 "USA": 2,
-                "HKG": 3,
                 "GBR": 1,
                 "IRN": 1,
                 "SGP": 2
             },
             "coauthorLong": {
-                "China": 10,
+                "China": 13,
                 "Australia": 13,
                 "Denmark": 1,
                 "Poland": 1,
                 "New Zealand": 1,
                 "USA": 2,
-                "Hong Kong": 3,
                 "UK": 1,
                 "Iran": 1,
                 "Singapore": 2
