@@ -35,8 +35,6 @@ export default function IndexScatterPlot({ selectedProfId, setSelectedProfId }) 
 
   useEffect(() => {
     const plot = Plot.plot({
-      // height: 400,
-      // width: 700,
       color: {
         type: "categorical",
         domain: [
@@ -99,7 +97,7 @@ export default function IndexScatterPlot({ selectedProfId, setSelectedProfId }) 
     containerRef.current.append(plot);
     
     return () => plot.remove();
-  }, [data, selectedProfId]);
+  }, [data, selectedProf]);
 
   return (
     <div>
