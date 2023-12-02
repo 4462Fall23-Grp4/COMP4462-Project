@@ -25,7 +25,7 @@ export default function ChoroplethMap({ selectedProfId, setSelectedProfId }) {
         svgRef.current.innerHTML = ""
         let dataState = {}
         if (!selectedProfId){
-            dataState ={ 'GBR': 26, 'SGP': 29, 'CHN': 460, 'USA': 334, 'FRA': 5, 'CAN': 32, 'DEU': 12, 'TUR': 2, 'CHE': 8, 'TWN': 8, 'KOR': 16, 'AUS': 29, 'JPN': 5, 'FIN': 4, 'NLD': 5, 'BEL': 3, 'ISR': 5, 'ARE': 1, 'NZL': 2, 'NOR': 4, 'AUT': 6, 'DNK': 6, 'IRN': 5, 'ITA': 8, 'POL': 2, 'CYP': 1, 'GRC': 12, 'EGY': 1, 'IRL': 1, 'IND': 3, 'BRA': 2 }
+            dataState ={ 'GBR': 26, 'SGP': 29, 'CHN': 468, 'USA': 334, 'FRA': 5, 'CAN': 32, 'DEU': 12, 'TUR': 2, 'CHE': 8, 'KOR': 16, 'AUS': 29, 'JPN': 5, 'FIN': 4, 'NLD': 5, 'BEL': 3, 'ISR': 5, 'ARE': 1, 'NZL': 2, 'NOR': 4, 'AUT': 6, 'DNK': 6, 'IRN': 5, 'ITA': 8, 'POL': 2, 'CYP': 1, 'GRC': 12, 'EGY': 1, 'IRL': 1, 'IND': 3, 'BRA': 2 }
         }
         // console.log("use effect")
         for ( let i=0 ; i < mapData.data.length;i++){
@@ -94,7 +94,7 @@ export default function ChoroplethMap({ selectedProfId, setSelectedProfId }) {
 
             console.log(data)
 
-            var tempdata = { 'GBR': 26, 'SGP': 29, 'CHN': 460, 'USA': 334, 'FRA': 5, 'CAN': 32, 'DEU': 12, 'TUR': 2, 'CHE': 8, 'TWN': 8, 'KOR': 16, 'AUS': 29, 'JPN': 5, 'FIN': 4, 'NLD': 5, 'BEL': 3, 'ISR': 5, 'ARE': 1, 'NZL': 2, 'NOR': 4, 'AUT': 6, 'DNK': 6, 'IRN': 5, 'ITA': 8, 'POL': 2, 'CYP': 1, 'GRC': 12, 'EGY': 1, 'IRL': 1, 'IND': 3, 'BRA': 2 }
+            var tempdata = { 'GBR': 26, 'SGP': 29, 'CHN': 468, 'USA': 334, 'FRA': 5, 'CAN': 32, 'DEU': 12, 'TUR': 2, 'CHE': 8, 'KOR': 16, 'AUS': 29, 'JPN': 5, 'FIN': 4, 'NLD': 5, 'BEL': 3, 'ISR': 5, 'ARE': 1, 'NZL': 2, 'NOR': 4, 'AUT': 6, 'DNK': 6, 'IRN': 5, 'ITA': 8, 'POL': 2, 'CYP': 1, 'GRC': 12, 'EGY': 1, 'IRL': 1, 'IND': 3, 'BRA': 2 }
 
 
             const mouseover = function (d) {
