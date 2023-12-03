@@ -42,7 +42,7 @@ export default function PublicationLineGraph({profData}) {
       $schema: "https://vega.github.io/schema/vega-lite/v5.json",
       title: `${profData ? profData.name + "'s" : "Total"} Paper Publications from 1950 to 2023`,
       width: 500,
-      height: 200,
+      height: 160,
       mark: "line",
       data: {
         values: chartData,

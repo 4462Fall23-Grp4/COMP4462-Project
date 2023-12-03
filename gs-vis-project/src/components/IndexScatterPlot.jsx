@@ -4,7 +4,7 @@ import ust_cse_prof_data from "../data/ust_cse_prof.json";
 import { parseRank } from "../utils";
 import { ButtonGroup, ToggleButton } from "react-bootstrap";
 
-export default function IndexScatterPlot() {
+export default function IndexScatterPlot({ selectedProfId, setSelectedProfId }) {
   const containerRef = useRef();
 
   const [currentMode, setCurrentMode] = useState("1");
@@ -29,10 +29,12 @@ export default function IndexScatterPlot() {
     });
   }, [currentMode]);
 
+  const selectedProf = useMemo(() => {
+    return data.filter(x => x.gs_id == selectedProfId)
+  }, [selectedProfId, data])
+
   useEffect(() => {
     const plot = Plot.plot({
-      height: 500,
-      width: 700,
       color: {
         type: "categorical",
         domain: [
@@ -57,7 +59,7 @@ export default function IndexScatterPlot() {
           x: "hindex",
           y: "i10index",
           stroke: "rank",
-          symbol: "head",
+          symbol: "head"
         }),
         Plot.tip(
           data,
@@ -67,14 +69,35 @@ export default function IndexScatterPlot() {
             title: (d) =>
               `${d.name} \n\n i-index: ${d.i10index} \n h-index: ${d.hindex}`,
             fontSize: 14,
+            filter: (d) => d.gs_id != selectedProfId
           })
         ),
+        Plot.tip(
+          selectedProf,
+          {
+            x: "hindex",
+            y: "i10index",
+            title: (d) =>
+              `${d.name} \n\n i-index: ${d.i10index} \n h-index: ${d.hindex}`,
+            fontSize: 14,
+            fontWeight: 'bold',
+            stroke: "blue",
+            strokeWidth: 2
+          }
+        )
       ],
     });
 
+    plot.addEventListener("click", (event) => {
+      if (plot.value) {
+        setSelectedProfId(plot.value.gs_id)
+      }
+    });
+
     containerRef.current.append(plot);
+    
     return () => plot.remove();
-  }, [data]);
+  }, [data, selectedProf]);
 
   return (
     <div>
