@@ -1,0 +1,132 @@
+{
+    "overall": [
+        {
+            "region": "Hong Kong",
+            "size": 206
+        },
+        {
+            "size": 26,
+            "region": "UK"
+        },
+        {
+            "size": 29,
+            "region": "Singapore"
+        },
+        {
+            "size": 254,
+            "region": "China"
+        },
+        {
+            "size": 334,
+            "region": "USA"
+        },
+        {
+            "size": 5,
+            "region": "France"
+        },
+        {
+            "size": 32,
+            "region": "Canada"
+        },
+        {
+            "size": 12,
+            "region": "Germany"
+        },
+        {
+            "size": 2,
+            "region": "Turkey"
+        },
+        {
+            "size": 8,
+            "region": "Switzerland"
+        },
+        {
+            "size": 8,
+            "region": "Taiwan"
+        },
+        {
+            "size": 16,
+            "region": "South Korea"
+        },
+        {
+            "size": 29,
+            "region": "Australia"
+        },
+        {
+            "size": 5,
+            "region": "Japan"
+        },
+        {
+            "size": 4,
+            "region": "Finland"
+        },
+        {
+            "size": 5,
+            "region": "Netherlands"
+        },
+        {
+            "size": 3,
+            "region": "Belgium"
+        },
+        {
+            "size": 5,
+            "region": "Israel"
+        },
+        {
+            "size": 1,
+            "region": "United Arab Emirates"
+        },
+        {
+            "size": 2,
+            "region": "New Zealand"
+        },
+        {
+            "size": 4,
+            "region": "Norway"
+        },
+        {
+            "size": 6,
+            "region": "Austria"
+        },
+        {
+            "size": 6,
+            "region": "Denmark"
+        },
+        {
+            "size": 5,
+            "region": "Iran"
+        },
+        {
+            "size": 8,
+            "region": "Italy"
+        },
+        {
+            "size": 2,
+            "region": "Poland"
+        },
+        {
+            "size": 1,
+            "region": "Cyprus"
+        },
+        {
+            "size": 12,
+            "region": "Greece"
+        },
+        {
+            "size": 1,
+            "region": "Egypt"
+        },
+        {
+            "size": 1,
+            "region": "Ireland"
+        },
+        {
+            "size": 3,
+            "region": "India"
+        },
+        {
+            "size": 2,
+            "region": "Brazil"
+        }
+    ]
+}

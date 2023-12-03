@@ -40,8 +40,8 @@ const App = () => {
   , [currentProfId])
 
   const Choropleth = useMemo(() => 
-    <ChoroplethMap selectedProfId={currentProfId} setSelectedProfId={setCurrentProfIdCallback} />
-  , [currentProfId])
+  <ChoroplethMap selectedProfId={currentProfId} setSelectedProfId={setCurrentProfIdCallback} />
+, [currentProfId])
 
   const researchInterest = useMemo(() => 
     <ResearchInterest selectedProfId={currentProfId} setSelectedProfId={setCurrentProfIdCallback} />
