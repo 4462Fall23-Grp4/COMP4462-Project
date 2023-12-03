@@ -73,6 +73,7 @@ const App = () => {
             This visualization aims to act as a visual aid to evaluate HKUST CSE Department&apos;s regular faculty 
             members&apos; performance, research interest and co-authorship network in overall and individual view.
             Select a faculty member for more indivdual details. Click &ldquo;Deselect&ldquo; to view overall visualisation.
+            (The data is updated up to 16 Nov 2023)
           </p>
           <Tab.Container activeKey={currentTab} onSelect={handleTabSelect}>
             <Nav variant="tabs" className="mb-3">
