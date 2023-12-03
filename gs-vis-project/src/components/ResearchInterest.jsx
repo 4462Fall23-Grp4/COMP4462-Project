@@ -1,3 +1,6 @@
+/**
+ * Reference: https://gist.github.com/nbremer/f9dacd23eece9d23669c
+ */
 import * as d3 from "d3"
 import chordData from '../data/author_interest.json'
 import profID from '../data/ust_prof_id.json'
