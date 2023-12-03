@@ -43,9 +43,13 @@ const App = () => {
   <ChoroplethMap selectedProfId={currentProfId} setSelectedProfId={setCurrentProfIdCallback} />
 , [currentProfId])
 
-const researchInterest = useMemo(() => 
-<ResearchInterest selectedProfId={currentProfId} setSelectedProfId={setCurrentProfIdCallback} />
-, [currentProfId])
+  const researchInterest = useMemo(() => 
+    <ResearchInterest selectedProfId={currentProfId} setSelectedProfId={setCurrentProfIdCallback} />
+  , [currentProfId])
+
+  const indexScatterPlot = useMemo(() => 
+    <IndexScatterPlot selectedProfId={currentProfId} setSelectedProfId={setCurrentProfIdCallback} />
+  , [currentProfId])
 
 
   const handleTabSelect = (selectedTab) => {
@@ -68,6 +72,7 @@ const researchInterest = useMemo(() =>
           <p>
             This visualization aims to act as a visual aid to evaluate HKUST CSE Department&apos;s regular faculty 
             members&apos; performance, research interest and co-authorship network in overall and individual view.
+            Select a faculty member for more indivdual details. Click &ldquo;Deselect&ldquo; to view overall visualisation.
           </p>
           <Tab.Container activeKey={currentTab} onSelect={handleTabSelect}>
             <Nav variant="tabs" className="mb-3">
@@ -87,13 +92,22 @@ const researchInterest = useMemo(() =>
             <Tab.Content>
               <Tab.Pane eventKey="perfTab">
                 <p>
-                The i10-index and h-index are important indicators of the productivity and the citation impact of publication of an author. On the left side, the two indicators are used to plot a scatter plot. You may choose the overall view or the 5-year view.
-                <br></br>
-The number of citations and publications also provide significant insight into analysing research impact and rank of all professors in the CSE department at HKUST.  On the right side, line charts for total citation per year and total publication per year are displayed. You can select a specific author on the author panel to view the charts for his/her respective citation per year and publication per year.
+                  The i10-index and h-index are important indicators of the productivity and the citation impact of 
+                  publication of an author. On the left side, the two indicators are used to plot a scatterplot. 
+                  You may choose the overall view or the 5-year view. You can hover each point for details, or click
+                  to select a faculty member.
+                  <br/><br/>
+                  The number of citations and publications also provide significant insight into analysing research 
+                  impact and rank of all professors in the CSE department at HKUST.  On the right side, line charts 
+                  for total citation per year and total publication per year are displayed. You can select a specific 
+                  author on the author panel to view the charts for his/her respective citation per year and 
+                  publication per year.
                 </p>
                 <Row>
                   <Col>
-                    <IndexScatterPlot />
+                    <div style={{width: "500px"}}>
+                      {indexScatterPlot}
+                    </div>
                   </Col>
                   <Col>
                     <div className="d-flex flex-column align-items-end">

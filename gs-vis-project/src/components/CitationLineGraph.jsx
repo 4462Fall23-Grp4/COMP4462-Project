@@ -40,7 +40,7 @@ export default function CitationLineGraph({profData}) {
       $schema: "https://vega.github.io/schema/vega-lite/v5.json",
       title: `${profData ? profData.name + "'s" : "Total"} Paper Citations from 1950 to 2023`,
       width: 500,
-      height: 200,
+      height: 160,
       mark: "line",
       data: {
         values: chartData,

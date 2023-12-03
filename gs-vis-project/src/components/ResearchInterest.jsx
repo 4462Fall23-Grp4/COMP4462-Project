@@ -1,3 +1,6 @@
+/**
+ * Reference: https://gist.github.com/nbremer/f9dacd23eece9d23669c
+ */
 import * as d3 from "d3"
 import chordData from '../data/author_interest.json'
 import profID from '../data/ust_prof_id.json'
@@ -255,8 +258,8 @@ export default function ResearchInterest({ selectedProfId, setSelectedProfId }) 
             mobileScreen = (screenWidth > 500 ? false : true);
 
         const margin = { left: 40, top: 10, right: 0, bottom: 10 },
-            width = Math.min(screenWidth, 1000) - margin.left - margin.right,
-            height = (mobileScreen ? 300 : Math.min(screenWidth, 800) * 7 / 8) - margin.top - margin.bottom;
+            width = 800 - margin.left - margin.right,
+            height = 650 - margin.top - margin.bottom;
 
 
         const svg = container

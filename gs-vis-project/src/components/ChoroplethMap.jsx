@@ -2,8 +2,6 @@
  * Reference: https://github.com/ninjaconcept/d3-force-directed-graph/blob/master/example/3-user-interaction.html
  */
 import * as d3 from 'd3'
-// import { geoRobinson } from 'd3'
-// import * as d3 from "d3"
 import nodes from '../data/unique_ust_coauthor.json'
 import links from '../data/ust_coauthor_link.json'
 import { useEffect, useRef, useState } from "react"
@@ -18,22 +16,22 @@ import legendpng from '../assets/legendChoroplethMap.png';
 // eslint-disable-next-line react/prop-types
 export default function ChoroplethMap({ selectedProfId, setSelectedProfId }) {
     const svgRef = useRef(null)
-    const [isempty, setIsEmpty]= useState (false)
-    // const [dataState , setData]= useState ({ 'GBR': 26, 'SGP': 29, 'CHN': 460, 'USA': 334, 'FRA': 5, 'CAN': 32, 'DEU': 12, 'TUR': 2, 'CHE': 8, 'TWN': 8, 'KOR': 16, 'AUS': 29, 'JPN': 5, 'FIN': 4, 'NLD': 5, 'BEL': 3, 'ISR': 5, 'ARE': 1, 'NZL': 2, 'NOR': 4, 'AUT': 6, 'DNK': 6, 'IRN': 5, 'ITA': 8, 'POL': 2, 'CYP': 1, 'GRC': 12, 'EGY': 1, 'IRL': 1, 'IND': 3, 'BRA': 2 })
+    
+    
     useEffect(() => {
-        // console.log("test", svgRef.current.innerHTML = "")
+        
         svgRef.current.innerHTML = ""
         let dataState = {}
         if (!selectedProfId){
             dataState ={ 'GBR': 26, 'SGP': 29, 'CHN': 468, 'USA': 334, 'FRA': 5, 'CAN': 32, 'DEU': 12, 'TUR': 2, 'CHE': 8, 'KOR': 16, 'AUS': 29, 'JPN': 5, 'FIN': 4, 'NLD': 5, 'BEL': 3, 'ISR': 5, 'ARE': 1, 'NZL': 2, 'NOR': 4, 'AUT': 6, 'DNK': 6, 'IRN': 5, 'ITA': 8, 'POL': 2, 'CYP': 1, 'GRC': 12, 'EGY': 1, 'IRL': 1, 'IND': 3, 'BRA': 2 }
         }
-        // console.log("use effect")
+        
         for ( let i=0 ; i < mapData.data.length;i++){
-            // console.log(mapData.data[i].id, " vs ", selectedProfId)
+            
             if (mapData.data[i].id===selectedProfId){
-                console.log("matched in useeffect")
+                
                 dataState = mapData.data[i].coauthor
-                // setData( mapData.data[i].coauthor)
+                
             }
             
         }
@@ -92,10 +90,8 @@ export default function ChoroplethMap({ selectedProfId, setSelectedProfId }) {
                 data[d.iso3] = +d.refugees
             });
 
-            console.log(data)
 
-            var tempdata = { 'GBR': 26, 'SGP': 29, 'CHN': 468, 'USA': 334, 'FRA': 5, 'CAN': 32, 'DEU': 12, 'TUR': 2, 'CHE': 8, 'KOR': 16, 'AUS': 29, 'JPN': 5, 'FIN': 4, 'NLD': 5, 'BEL': 3, 'ISR': 5, 'ARE': 1, 'NZL': 2, 'NOR': 4, 'AUT': 6, 'DNK': 6, 'IRN': 5, 'ITA': 8, 'POL': 2, 'CYP': 1, 'GRC': 12, 'EGY': 1, 'IRL': 1, 'IND': 3, 'BRA': 2 }
-
+           
 
             const mouseover = function (d) {
                 d3.selectAll(".countries")
@@ -166,18 +162,7 @@ export default function ChoroplethMap({ selectedProfId, setSelectedProfId }) {
             .attr("class", "legendThreshold")
             .attr("transform", "translate(5,255)");
 
-        // const legend = d3.legendColor()
-        //     .labelFormat(d3.format(",.0f"))
-        //     .labels(d3.legendHelpers.thresholdLabels)
-        //     .labelOffset(3)
-        //     .shapePadding(0)
-        //     .scale(color);
-
-        // svg.select(".legendThreshold")
-        //     .call(legend);
-
-        // set note
-
+        
     }, [selectedProfId])
 
     const getProfessorName = (selectedProfId) => {
@@ -228,69 +213,28 @@ export default function ChoroplethMap({ selectedProfId, setSelectedProfId }) {
         return []
     }
 
-    const getAnnotationContent = () => {
-        const profName = getProfessorName(selectedProfId)
-        const coauthorNetwork = getCoauthorList(selectedProfId)
 
-        return (<Row>
-            <div style={{ textAlign: "justify" }}>
-                <p style={{ fontWeight: "bold", fontSize: "18px" }}>
-                    Prof. {profName}
-                </p>
-
-                {coauthorNetwork.length > 0 ?
-                    <div style={{ fontWeight: "bold", fontSize: "14px" }}>
-                        <div style={{ float: 'left', minWidth: "150px" }}>
-                            Country/Region
-                        </div>
-                        <div>
-                            Number
-                        </div>
-                    </div> :
-                    <div>
-                        No data from Goolge Scholar
-                    </div>
-                }
-                {coauthorNetwork.map((data) => {
-                    return (
-                        <div key={data.country}>
-                            <div style={{ float: 'left', minWidth: "150px" }}>
-                                {data.country}
-                            </div>
-                            <div>
-                                {data.number}
-                            </div>
-                        </div>
-                    )
-                })}
-
-            </div>
-        </Row>)
-    }
     const getAuthor = () => {
-        console.log("in getAuthor" , selectedProfId, mapData.data.length )
+     
         for ( let i=0 ; i < mapData.data.length;i++){
-            console.log(mapData.data[i].id, " vs ", selectedProfId)
+            
             if (mapData.data[i].id===selectedProfId){
-                console.log("matched")
+                
                 
                 return mapData.data[i].coauthorLong
             }
             
         }
-        // return mapData.data[0].coauthor
-        console.log("null!")
+       
         
         return null
     }
 
     const getAnnotationContentProf = () => {
         const profName = getProfessorName(selectedProfId)
-        // const coauthorNetwork = getCoauthorList(selectedProfId)
         const coauthorNetwork = getAuthor()
-        console.log("coauthorNetwork",coauthorNetwork)
-        // setData(coauthorNetwork)
-        // tempdata= coauthorNetwork
+   
+       
         
 
         return (<Row>
@@ -327,24 +271,13 @@ export default function ChoroplethMap({ selectedProfId, setSelectedProfId }) {
             </div>
       ))}
     </div>
-                {/* {coauthorNetwork && coauthorNetwork.map((data) => {
-                    return (
-                        <div key={data.country}>
-                            <div style={{ float: 'left', minWidth: "150px" }}>
-                                {data.country}
-                            </div>
-                            <div>
-                                {data.number}
-                            </div>
-                        </div>
-                    )
-                })} */}
+               
 
             </div>
         </Row>)
     }
 
-    console.log(selectedProfId)
+   
     return (
         <div>
             <Row>
@@ -357,10 +290,7 @@ export default function ChoroplethMap({ selectedProfId, setSelectedProfId }) {
                             to view the respective collaboration.
                         </p>
                     </Row>
-                    {/* {selectedProfId ?
-                        getAnnotationContent()
-                        : <></>
-                    } */}
+                   
                      {selectedProfId ?
                         getAnnotationContentProf()
                         : <></>

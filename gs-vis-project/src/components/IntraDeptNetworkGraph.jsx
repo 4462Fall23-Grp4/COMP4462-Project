@@ -6,7 +6,7 @@ import * as d3 from "d3"
 import nodes from '../data/unique_ust_coauthor.json'
 import links from '../data/ust_coauthor_link.json'
 import { useEffect, useRef, useState } from "react"
-import { getRankColor } from "../utils"
+import { getRankColor, ranks } from "../utils"
 import { Col, Row } from "react-bootstrap"
 
 // eslint-disable-next-line react/prop-types
@@ -19,7 +19,7 @@ export default function IntraDeptNetworkGraph({selectedProfId, setSelectedProfId
     const container = d3.select(svgRef.current)
 
     const width = 800
-    const height = 600
+    const height = 550
     const radius = 8
 
     container.selectAll("*").remove();
@@ -204,6 +204,13 @@ export default function IntraDeptNetworkGraph({selectedProfId, setSelectedProfId
             CSE Department&apos;s regular faculty members. Feel free to click on the node to select the
             member, or drag the nodes to move the nodes. 
           </p>
+
+          <div className="mb-3">{ranks.map((rank, index) => (
+            <p key={`rank${index}-legend`}>
+              <svg width="20" height="10"><circle cx="5" cy="5" r="5" fill={getRankColor(rank)}/></svg>
+              {rank} 
+            </p>
+          ))}</div>
 
           <div className="mt-3" style={{color: "red"}}> 
             {
