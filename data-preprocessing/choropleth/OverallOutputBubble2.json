@@ -1,0 +1,1176 @@
+{
+    "overall": [
+        {
+            "id": "Azu2w_MAAAAJ",
+            "coauthor": []
+        },
+        {
+            "id": "aQblKVwAAAAJ",
+            "coauthor": [
+                {
+                    "size": 2,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 1,
+                    "region": "UK"
+                },
+                {
+                    "size": 1,
+                    "region": "Singapore"
+                },
+                {
+                    "size": 2,
+                    "region": "China"
+                },
+                {
+                    "size": 1,
+                    "region": "USA"
+                },
+                {
+                    "size": 1,
+                    "region": "France"
+                }
+            ]
+        },
+        {
+            "id": "uiCSOycAAAAJ",
+            "coauthor": [
+                {
+                    "size": 19,
+                    "region": "USA"
+                },
+                {
+                    "size": 22,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 8,
+                    "region": "China"
+                },
+                {
+                    "size": 2,
+                    "region": "Canada"
+                },
+                {
+                    "size": 1,
+                    "region": "Germany"
+                },
+                {
+                    "size": 1,
+                    "region": "Turkey"
+                },
+                {
+                    "size": 2,
+                    "region": "Singapore"
+                },
+                {
+                    "size": 2,
+                    "region": "Switzerland"
+                },
+                {
+                    "size": 2,
+                    "region": "Taiwan"
+                }
+            ]
+        },
+        {
+            "id": "Z_t5DjwAAAAJ",
+            "coauthor": [
+                {
+                    "size": 3,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 1,
+                    "region": "UK"
+                },
+                {
+                    "size": 1,
+                    "region": "China"
+                }
+            ]
+        },
+        {
+            "id": "tnRV5QYAAAAJ",
+            "coauthor": [
+                {
+                    "size": 2,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 11,
+                    "region": "USA"
+                },
+                {
+                    "size": 1,
+                    "region": "South Korea"
+                },
+                {
+                    "size": 6,
+                    "region": "China"
+                },
+                {
+                    "size": 1,
+                    "region": "Canada"
+                },
+                {
+                    "size": 1,
+                    "region": "Australia"
+                }
+            ]
+        },
+        {
+            "id": "gtglwgYAAAAJ",
+            "coauthor": [
+                {
+                    "size": 9,
+                    "region": "USA"
+                },
+                {
+                    "size": 14,
+                    "region": "China"
+                },
+                {
+                    "size": 2,
+                    "region": "Canada"
+                },
+                {
+                    "size": 10,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 4,
+                    "region": "Australia"
+                },
+                {
+                    "size": 1,
+                    "region": "Japan"
+                },
+                {
+                    "size": 1,
+                    "region": "Finland"
+                },
+                {
+                    "size": 1,
+                    "region": "Turkey"
+                }
+            ]
+        },
+        {
+            "id": "-gtmMpIAAAAJ",
+            "coauthor": [
+                {
+                    "size": 25,
+                    "region": "China"
+                },
+                {
+                    "size": 5,
+                    "region": "Singapore"
+                },
+                {
+                    "size": 15,
+                    "region": "USA"
+                },
+                {
+                    "size": 4,
+                    "region": "Hong Kong"
+                }
+            ]
+        },
+        {
+            "id": "lLMX9hcAAAAJ",
+            "coauthor": [
+                {
+                    "size": 9,
+                    "region": "USA"
+                },
+                {
+                    "size": 26,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 1,
+                    "region": "Australia"
+                },
+                {
+                    "size": 1,
+                    "region": "Canada"
+                },
+                {
+                    "size": 3,
+                    "region": "China"
+                },
+                {
+                    "size": 1,
+                    "region": "South Korea"
+                },
+                {
+                    "size": 2,
+                    "region": "France"
+                },
+                {
+                    "size": 1,
+                    "region": "UK"
+                }
+            ]
+        },
+        {
+            "id": "_LkC1yoAAAAJ",
+            "coauthor": [
+                {
+                    "size": 4,
+                    "region": "USA"
+                }
+            ]
+        },
+        {
+            "id": "0nquEkQAAAAJ",
+            "coauthor": [
+                {
+                    "size": 7,
+                    "region": "USA"
+                },
+                {
+                    "size": 3,
+                    "region": "South Korea"
+                },
+                {
+                    "size": 1,
+                    "region": "China"
+                },
+                {
+                    "size": 1,
+                    "region": "Canada"
+                },
+                {
+                    "size": 1,
+                    "region": "Netherlands"
+                },
+                {
+                    "size": 1,
+                    "region": "Germany"
+                },
+                {
+                    "size": 1,
+                    "region": "Belgium"
+                },
+                {
+                    "size": 1,
+                    "region": "Israel"
+                },
+                {
+                    "size": 1,
+                    "region": "Singapore"
+                },
+                {
+                    "size": 1,
+                    "region": "Hong Kong"
+                }
+            ]
+        },
+        {
+            "id": "5RIgb3wAAAAJ",
+            "coauthor": [
+                {
+                    "size": 16,
+                    "region": "China"
+                },
+                {
+                    "size": 11,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 5,
+                    "region": "UK"
+                },
+                {
+                    "size": 1,
+                    "region": "United Arab Emirates"
+                },
+                {
+                    "size": 1,
+                    "region": "Canada"
+                },
+                {
+                    "size": 1,
+                    "region": "Germany"
+                },
+                {
+                    "size": 1,
+                    "region": "Australia"
+                },
+                {
+                    "size": 1,
+                    "region": "New Zealand"
+                },
+                {
+                    "size": 2,
+                    "region": "USA"
+                },
+                {
+                    "size": 1,
+                    "region": "South Korea"
+                }
+            ]
+        },
+        {
+            "id": "MVf7Lq0AAAAJ",
+            "coauthor": [
+                {
+                    "size": 1,
+                    "region": "China"
+                },
+                {
+                    "size": 1,
+                    "region": "Hong Kong"
+                }
+            ]
+        },
+        {
+            "id": "H9zO5eYAAAAJ",
+            "coauthor": [
+                {
+                    "size": 3,
+                    "region": "Norway"
+                },
+                {
+                    "size": 4,
+                    "region": "China"
+                },
+                {
+                    "size": 1,
+                    "region": "France"
+                },
+                {
+                    "size": 1,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 6,
+                    "region": "USA"
+                },
+                {
+                    "size": 2,
+                    "region": "Singapore"
+                },
+                {
+                    "size": 1,
+                    "region": "Japan"
+                },
+                {
+                    "size": 1,
+                    "region": "UK"
+                },
+                {
+                    "size": 1,
+                    "region": "Canada"
+                },
+                {
+                    "size": 1,
+                    "region": "Germany"
+                },
+                {
+                    "size": 2,
+                    "region": "Finland"
+                }
+            ]
+        },
+        {
+            "id": "4o8gvAYAAAAJ",
+            "coauthor": [
+                {
+                    "size": 4,
+                    "region": "Austria"
+                },
+                {
+                    "size": 3,
+                    "region": "China"
+                },
+                {
+                    "size": 1,
+                    "region": "Denmark"
+                },
+                {
+                    "size": 1,
+                    "region": "UK"
+                },
+                {
+                    "size": 3,
+                    "region": "Iran"
+                },
+                {
+                    "size": 1,
+                    "region": "Australia"
+                },
+                {
+                    "size": 2,
+                    "region": "Germany"
+                },
+                {
+                    "size": 6,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 3,
+                    "region": "USA"
+                }
+            ]
+        },
+        {
+            "id": "YooPxQwAAAAJ",
+            "coauthor": [
+                {
+                    "size": 2,
+                    "region": "Japan"
+                },
+                {
+                    "size": 1,
+                    "region": "Italy"
+                },
+                {
+                    "size": 14,
+                    "region": "USA"
+                },
+                {
+                    "size": 2,
+                    "region": "Germany"
+                },
+                {
+                    "size": 2,
+                    "region": "Canada"
+                },
+                {
+                    "size": 1,
+                    "region": "UK"
+                },
+                {
+                    "size": 2,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 1,
+                    "region": "Poland"
+                },
+                {
+                    "size": 2,
+                    "region": "Belgium"
+                },
+                {
+                    "size": 3,
+                    "region": "Israel"
+                },
+                {
+                    "size": 3,
+                    "region": "China"
+                },
+                {
+                    "size": 2,
+                    "region": "South Korea"
+                },
+                {
+                    "size": 1,
+                    "region": "Australia"
+                },
+                {
+                    "size": 1,
+                    "region": "Switzerland"
+                }
+            ]
+        },
+        {
+            "id": "Ib-sizwAAAAJ",
+            "coauthor": [
+                {
+                    "size": 4,
+                    "region": "China"
+                },
+                {
+                    "size": 1,
+                    "region": "Japan"
+                },
+                {
+                    "size": 3,
+                    "region": "Australia"
+                },
+                {
+                    "size": 1,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 1,
+                    "region": "Canada"
+                }
+            ]
+        },
+        {
+            "id": "-0q6cIYAAAAJ",
+            "coauthor": [
+                {
+                    "size": 2,
+                    "region": "China"
+                },
+                {
+                    "size": 2,
+                    "region": "UK"
+                }
+            ]
+        },
+        {
+            "id": "BIFGeoUAAAAJ",
+            "coauthor": [
+                {
+                    "size": 7,
+                    "region": "USA"
+                }
+            ]
+        },
+        {
+            "id": "irCp0RIAAAAJ",
+            "coauthor": []
+        },
+        {
+            "id": "JE_m2UgAAAAJ",
+            "coauthor": [
+                {
+                    "size": 14,
+                    "region": "USA"
+                },
+                {
+                    "size": 5,
+                    "region": "China"
+                },
+                {
+                    "size": 6,
+                    "region": "South Korea"
+                },
+                {
+                    "size": 2,
+                    "region": "Canada"
+                },
+                {
+                    "size": 1,
+                    "region": "UK"
+                },
+                {
+                    "size": 3,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 1,
+                    "region": "Singapore"
+                },
+                {
+                    "size": 1,
+                    "region": "Austria"
+                },
+                {
+                    "size": 1,
+                    "region": "Switzerland"
+                }
+            ]
+        },
+        {
+            "id": "-oTraZ4AAAAJ",
+            "coauthor": []
+        },
+        {
+            "id": "SLgWQLEAAAAJ",
+            "coauthor": [
+                {
+                    "size": 3,
+                    "region": "Canada"
+                },
+                {
+                    "size": 9,
+                    "region": "China"
+                },
+                {
+                    "size": 9,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 6,
+                    "region": "USA"
+                },
+                {
+                    "size": 1,
+                    "region": "Italy"
+                },
+                {
+                    "size": 1,
+                    "region": "Taiwan"
+                }
+            ]
+        },
+        {
+            "id": "kjiwE6IAAAAJ",
+            "coauthor": [
+                {
+                    "size": 6,
+                    "region": "China"
+                },
+                {
+                    "size": 2,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 7,
+                    "region": "USA"
+                },
+                {
+                    "size": 1,
+                    "region": "Singapore"
+                }
+            ]
+        },
+        {
+            "id": "klFoxpYAAAAJ",
+            "coauthor": []
+        },
+        {
+            "id": "SqAsppUAAAAJ",
+            "coauthor": [
+                {
+                    "size": 1,
+                    "region": "Singapore"
+                },
+                {
+                    "size": 6,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 12,
+                    "region": "China"
+                },
+                {
+                    "size": 18,
+                    "region": "USA"
+                },
+                {
+                    "size": 1,
+                    "region": "South Korea"
+                },
+                {
+                    "size": 1,
+                    "region": "Cyprus"
+                },
+                {
+                    "size": 1,
+                    "region": "Netherlands"
+                }
+            ]
+        },
+        {
+            "id": "TN0zm80AAAAJ",
+            "coauthor": []
+        },
+        {
+            "id": "Zx8p8RsAAAAJ",
+            "coauthor": []
+        },
+        {
+            "id": "NJ6YPT4AAAAJ",
+            "coauthor": []
+        },
+        {
+            "id": "7BPMWSkAAAAJ",
+            "coauthor": [
+                {
+                    "size": 5,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 4,
+                    "region": "Greece"
+                },
+                {
+                    "size": 5,
+                    "region": "Singapore"
+                },
+                {
+                    "size": 2,
+                    "region": "Germany"
+                },
+                {
+                    "size": 13,
+                    "region": "USA"
+                },
+                {
+                    "size": 2,
+                    "region": "Canada"
+                },
+                {
+                    "size": 1,
+                    "region": "Italy"
+                },
+                {
+                    "size": 1,
+                    "region": "China"
+                },
+                {
+                    "size": 1,
+                    "region": "UK"
+                },
+                {
+                    "size": 1,
+                    "region": "Denmark"
+                },
+                {
+                    "size": 1,
+                    "region": "Austria"
+                }
+            ]
+        },
+        {
+            "id": "9Q8DH5sAAAAJ",
+            "coauthor": [
+                {
+                    "size": 23,
+                    "region": "USA"
+                },
+                {
+                    "size": 8,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 5,
+                    "region": "Greece"
+                },
+                {
+                    "size": 1,
+                    "region": "Iran"
+                },
+                {
+                    "size": 2,
+                    "region": "China"
+                },
+                {
+                    "size": 1,
+                    "region": "Egypt"
+                },
+                {
+                    "size": 1,
+                    "region": "Ireland"
+                },
+                {
+                    "size": 1,
+                    "region": "UK"
+                },
+                {
+                    "size": 1,
+                    "region": "Finland"
+                },
+                {
+                    "size": 2,
+                    "region": "Germany"
+                },
+                {
+                    "size": 1,
+                    "region": "Switzerland"
+                },
+                {
+                    "size": 1,
+                    "region": "Denmark"
+                },
+                {
+                    "size": 2,
+                    "region": "India"
+                }
+            ]
+        },
+        {
+            "id": "jQqTdHwAAAAJ",
+            "coauthor": []
+        },
+        {
+            "id": "J7a5zGEAAAAJ",
+            "coauthor": [
+                {
+                    "size": 7,
+                    "region": "China"
+                },
+                {
+                    "size": 1,
+                    "region": "Singapore"
+                },
+                {
+                    "size": 3,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 5,
+                    "region": "USA"
+                }
+            ]
+        },
+        {
+            "id": "ZMLhZJ8AAAAJ",
+            "coauthor": []
+        },
+        {
+            "id": "GIToYFwAAAAJ",
+            "coauthor": [
+                {
+                    "size": 1,
+                    "region": "Brazil"
+                },
+                {
+                    "size": 1,
+                    "region": "USA"
+                }
+            ]
+        },
+        {
+            "id": "CAd3jhcAAAAJ",
+            "coauthor": [
+                {
+                    "size": 8,
+                    "region": "USA"
+                },
+                {
+                    "size": 1,
+                    "region": "Netherlands"
+                }
+            ]
+        },
+        {
+            "id": "pyLCHy0AAAAJ",
+            "coauthor": []
+        },
+        {
+            "id": "MdQZ-q8AAAAJ",
+            "coauthor": [
+                {
+                    "size": 38,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 28,
+                    "region": "China"
+                },
+                {
+                    "size": 49,
+                    "region": "USA"
+                },
+                {
+                    "size": 1,
+                    "region": "Taiwan"
+                },
+                {
+                    "size": 1,
+                    "region": "UK"
+                },
+                {
+                    "size": 4,
+                    "region": "Singapore"
+                },
+                {
+                    "size": 1,
+                    "region": "Switzerland"
+                },
+                {
+                    "size": 2,
+                    "region": "Australia"
+                },
+                {
+                    "size": 1,
+                    "region": "South Korea"
+                },
+                {
+                    "size": 1,
+                    "region": "Canada"
+                }
+            ]
+        },
+        {
+            "id": "DORzgBQAAAAJ",
+            "coauthor": [
+                {
+                    "size": 2,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 1,
+                    "region": "Israel"
+                },
+                {
+                    "size": 4,
+                    "region": "China"
+                },
+                {
+                    "size": 3,
+                    "region": "Taiwan"
+                },
+                {
+                    "size": 1,
+                    "region": "Switzerland"
+                },
+                {
+                    "size": 1,
+                    "region": "USA"
+                }
+            ]
+        },
+        {
+            "id": "EWfpM74AAAAJ",
+            "coauthor": []
+        },
+        {
+            "id": "POlWWAsAAAAJ",
+            "coauthor": [
+                {
+                    "size": 10,
+                    "region": "USA"
+                },
+                {
+                    "size": 1,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 1,
+                    "region": "China"
+                }
+            ]
+        },
+        {
+            "id": "FeJrzPMAAAAJ",
+            "coauthor": [
+                {
+                    "size": 4,
+                    "region": "Canada"
+                },
+                {
+                    "size": 5,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 1,
+                    "region": "USA"
+                },
+                {
+                    "size": 2,
+                    "region": "China"
+                }
+            ]
+        },
+        {
+            "id": "IKgiD0AAAAAJ",
+            "coauthor": []
+        },
+        {
+            "id": "NMkg-64AAAAJ",
+            "coauthor": []
+        },
+        {
+            "id": "OuSPv-AAAAAJ",
+            "coauthor": [
+                {
+                    "size": 2,
+                    "region": "Italy"
+                },
+                {
+                    "size": 1,
+                    "region": "France"
+                },
+                {
+                    "size": 4,
+                    "region": "UK"
+                },
+                {
+                    "size": 1,
+                    "region": "USA"
+                },
+                {
+                    "size": 1,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 1,
+                    "region": "Switzerland"
+                }
+            ]
+        },
+        {
+            "id": "nEsOOx8AAAAJ",
+            "coauthor": [
+                {
+                    "size": 5,
+                    "region": "China"
+                },
+                {
+                    "size": 5,
+                    "region": "USA"
+                },
+                {
+                    "size": 6,
+                    "region": "Hong Kong"
+                }
+            ]
+        },
+        {
+            "id": "dWcZPFEAAAAJ",
+            "coauthor": [
+                {
+                    "size": 2,
+                    "region": "UK"
+                },
+                {
+                    "size": 28,
+                    "region": "USA"
+                },
+                {
+                    "size": 2,
+                    "region": "Denmark"
+                },
+                {
+                    "size": 9,
+                    "region": "China"
+                },
+                {
+                    "size": 4,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 1,
+                    "region": "Canada"
+                },
+                {
+                    "size": 2,
+                    "region": "Singapore"
+                },
+                {
+                    "size": 1,
+                    "region": "Netherlands"
+                },
+                {
+                    "size": 2,
+                    "region": "Greece"
+                },
+                {
+                    "size": 1,
+                    "region": "India"
+                }
+            ]
+        },
+        {
+            "id": "TflKxcIAAAAJ",
+            "coauthor": [
+                {
+                    "size": 4,
+                    "region": "USA"
+                }
+            ]
+        },
+        {
+            "id": "Zmppp9kAAAAJ",
+            "coauthor": []
+        },
+        {
+            "id": "18_xlPUAAAAJ",
+            "coauthor": []
+        },
+        {
+            "id": "XTlaQMkAAAAJ",
+            "coauthor": [
+                {
+                    "size": 60,
+                    "region": "China"
+                },
+                {
+                    "size": 18,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 31,
+                    "region": "USA"
+                },
+                {
+                    "size": 7,
+                    "region": "Canada"
+                },
+                {
+                    "size": 1,
+                    "region": "Norway"
+                },
+                {
+                    "size": 1,
+                    "region": "Singapore"
+                },
+                {
+                    "size": 2,
+                    "region": "Australia"
+                },
+                {
+                    "size": 2,
+                    "region": "UK"
+                },
+                {
+                    "size": 1,
+                    "region": "Taiwan"
+                },
+                {
+                    "size": 1,
+                    "region": "Netherlands"
+                },
+                {
+                    "size": 1,
+                    "region": "Greece"
+                },
+                {
+                    "size": 3,
+                    "region": "Italy"
+                },
+                {
+                    "size": 1,
+                    "region": "Brazil"
+                }
+            ]
+        },
+        {
+            "id": "y6m820wAAAAJ",
+            "coauthor": [
+                {
+                    "size": 10,
+                    "region": "China"
+                },
+                {
+                    "size": 13,
+                    "region": "Australia"
+                },
+                {
+                    "size": 1,
+                    "region": "Denmark"
+                },
+                {
+                    "size": 1,
+                    "region": "Poland"
+                },
+                {
+                    "size": 1,
+                    "region": "New Zealand"
+                },
+                {
+                    "size": 2,
+                    "region": "USA"
+                },
+                {
+                    "size": 3,
+                    "region": "Hong Kong"
+                },
+                {
+                    "size": 1,
+                    "region": "UK"
+                },
+                {
+                    "size": 1,
+                    "region": "Iran"
+                },
+                {
+                    "size": 2,
+                    "region": "Singapore"
+                }
+            ]
+        }
+    ]
+}
