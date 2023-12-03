@@ -29,3 +29,9 @@ This notebook did the following:
 - Fetch Google scholar information of each HKUST CSE regular faculty member (manually one by one)
 - Preprocess the data for publication per year line graph and intra-department coauthorship network
 
+### `data_preprocessing2.ipynb`
+
+This notebook did the following:
+- Fetch the detail profile for all the coauthors
+- Fetch the organizatin name by organization ID
+- Map the organization name to country / region (need to manually map for uncommon organization )
